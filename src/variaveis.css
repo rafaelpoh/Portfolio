@@ -1,0 +1,6 @@
+:root {
+    --borda: snow;
+    --fundocontainer: #40B4E0 ;
+    --fundo: linear-gradient(to bottom, #363636 0%, #36494F 100%);
+    --texto: #00BFFF ;
+}

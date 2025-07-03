@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Lato, sans-serif;
+}
+
+html {
+  height: 100vh;
+  font-size: 15px;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  background: var(--fundo);
+  text-align: center;
+  height: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  max-width: 540px;
+  height: 100%;
+  margin: auto;
+  background: var(--fundo);
+  border: 2px solid var(--borda);
+  border-radius: 30px;
+}
+
+.fotoperfil {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  text-align: left;
+  border: 2px solid var(--borda);
+}
+
+.icone {
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  border: 3px solid var(--fundocontainer);
+}
+
+.botao {
+  background: var(--fundo);
+  border-radius: 2em;
+  border: 2px solid var(--borda);
+  font-size: 1.5em;
+  height: 4em;
+  display: flex;
+}
+
+.user {
+  font-size: 2em;
+  color: var(--texto);
+  font-weight: 400;
+  margin: 15px 0;
+}
+
+.descricao {
+  font-size: 1.5em;
+  color: var(--texto);
+  font-weight: 200;
+  margin: 15px 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--texto);
+}
+
+.lista {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+  gap: 1.5em;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding: 0 2em;
+}
+
+.contato {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 7em;
+  border-radius: 50%;
+  background-color: var(--fundocontainer);
+  border: 2px solid var(--borda);
+}
+
+footer {
+  display: flex;
+  gap: 1.5em;
+  justify-content: center;
+}
+
+@media screen and (min-width: 815px) {
+  html {
+    font-size: 20px;
+  }
+}
