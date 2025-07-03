@@ -24,7 +24,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding: 20px;
+  padding: 10px;
   max-width: 540px;
   height: 100%;
   margin: auto;
@@ -34,8 +34,7 @@ body {
 }
 
 .fotoperfil {
-  width: 200px;
-  height: 200px;
+  width: 6.5em;
   border-radius: 50%;
   text-align: left;
   border: 2px solid var(--borda);
@@ -67,7 +66,7 @@ body {
 .descricao {
   font-size: 1.5em;
   color: var(--texto);
-  font-weight: 200;
+  font-weight: 300;
   margin: 15px 0;
 }
 
@@ -97,7 +96,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 7em;
+  width: 6.5em;
   border-radius: 50%;
   background-color: var(--fundocontainer);
   border: 2px solid var(--borda);
