@@ -189,6 +189,7 @@ body {
     height: auto;
     display: inline-flex;
     align-items: center;
+    justify-content: center;
 }
 .curriculo__link {
     background-color: var(--textoforte);
@@ -213,10 +214,10 @@ body {
     width: 30px;
     height: 30px;
     background-color: var(--texto);
-    position: fixed;   /* Altere para fixed */
-    bottom: 20px;      /* Distância do fundo */
-    right: 20px;       /* Distância da direita */
-    z-index: 1000;     /* Garante que fique acima dos outros elementos */
+    position: fixed;   
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 1000; 
     cursor: pointer;
     display: flex;
     align-items: center;
