@@ -14,10 +14,12 @@ if (canvas && container) {
     const img = new Image();
     img.src = './icones/fotoperfil2.jpeg';
 
+    img.onload = () => {
     container.addEventListener('mouseenter', () => {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
         ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
     });
+};
 
     container.addEventListener('mouseleave', () => {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
