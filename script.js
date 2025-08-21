@@ -12,7 +12,7 @@ const canvas = document.getElementById('meuCanvas');
 if (canvas && container) {
     const ctx = canvas.getContext('2d');
     const img = new Image();
-    img.src = './icones/fotoperfil2.jpeg';
+    img.src = './icones/fotoperfil.WebP';
 
     img.onload = () => {
     container.addEventListener('mouseenter', () => {
