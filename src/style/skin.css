@@ -25,12 +25,19 @@ body {
     color: var(--texto);
     text-decoration: none;
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1rem;
     transition: color 0.3s ease;
 }
 
 .header__menu__link:hover {
     color: var(--textoforte);
+}
+.bi {
+    margin: 1rem;
+    font-size: 2rem;
+}
+#switch {
+    cursor: pointer;
 }
 
 .apresentacao {
@@ -143,7 +150,7 @@ body {
 
 .projeto__card h3 {
     font-size: 1.5rem;
-    margin-bottom: 10px;
+    margin-bottom: 2rem;
 }
 .projeto__links {
     display: inline-flex;
@@ -155,10 +162,10 @@ body {
 
 .projeto__link {
     display: inline-block;
-    background-color: var(--textoforte);
+    background-color: var(--borda);
     color: var(--texto);
-    padding: 1em 1em;
-    margin-top: 15px;
+    padding: 0.5em 1em;
+    margin-top: 1rem;
     text-decoration: none;
     border-radius: 5px;
     font-weight: 600;
@@ -179,9 +186,9 @@ body {
 }
 
 .contato__link {
-    background-color: var(--textoforte);
+    background-color: var(--borda);
     color: var(--texto);
-    padding: 12px 25px;
+    padding: 0.5rem 0;
     text-decoration: none;
     border-radius: 5px;
     font-weight: 600;
@@ -203,17 +210,12 @@ body {
     display: inline-flex;
     align-items: center;
 }
-.curriculo__container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 30px 0;
-}
 .icone-seta {
     border-radius: 50%;
     width: 30px;
     height: 30px;
-    background-color: var(--texto);
+    background-color: var(--borda);
+    color: var(--seta);
     position: fixed;   
     bottom: 20px; 
     right: 20px; 
@@ -222,11 +224,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-.icone {
-    height: 50px;
-    margin-left: 10px;
-    border-radius: 50%;
 }
 
 .contato__link:hover {
@@ -262,4 +259,93 @@ body {
         height: 2em;
         margin-left: 0;
     }
+    .contato__links {
+    margin: 0;
+    gap: 1rem;
+    justify-content: center;
+}
+.contato__link {
+    background-color: var(--borda);
+    color: var(--texto);
+    padding: 0;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    height: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+}
+}
+
+/* Ajustes nos Botões e Links */
+
+/* --- Botões dos Projetos --- */
+.projeto__links {
+    justify-content: center; /* Centraliza os botões */
+    gap: 20px; /* Adiciona espaço entre os botões */
+}
+
+.projeto__link {
+    padding: 12px 24px; /* Padding generoso para melhor clique */
+    gap: 8px; /* Espaço entre o texto e o ícone */
+    min-width: 150px; /* Largura mínima para consistência */
+    justify-content: center;
+}
+
+/* Remove a margem excessiva dos ícones dentro dos botões */
+.projeto__link .bi {
+    margin: 0;
+}
+
+
+/* --- Botões de Contato --- */
+.contato__links {
+    gap: 15px; /* Espaço entre os links de contato */
+}
+
+.contato__link {
+    padding: 12px 20px; /* Padding para tamanho ideal */
+    gap: 8px; /* Espaço entre o texto e o ícone */
+    justify-content: center;
+}
+
+/* Remove a margem excessiva dos ícones dentro dos botões */
+.contato__link .bi {
+    margin: 0;
+}
+
+
+/* --- Botão Flutuante (Seta) --- */
+.icone-seta {
+    width: 48px; /* Tamanho maior para fácil acesso */
+    height: 48px;
+}
+
+.icone-seta .bi {
+    margin: 0; /* Remove margem do ícone */
+    font-size: 1.5rem; /* Tamanho do ícone ajustado */
+}
+
+/* --- Ajuste geral para links do header --- */
+.header__menu__link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.header__menu__link .bi {
+    margin: 0;
+    font-size: 1.5rem; /* Ajusta o tamanho dos ícones do menu */
+}
+
+/* --- Posicionamento do Botão de Tema --- */
+#switch {
+    position: fixed;
+    top: 4rem;
+    right: 1rem;
+    cursor: pointer;
+    z-index: 1001;
 }

@@ -25,3 +25,25 @@ if (canvas && container) {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
     });
 }
+
+const toggleTheme = document.getElementById("switch");
+const themeIcon = toggleTheme.querySelector("i"); // Seleciona o elemento <i> dentro do botão
+const rootHtml = document.documentElement;
+
+function trocaTema() {
+  const currentTheme = rootHtml.getAttribute("data-theme");
+  const newTheme = currentTheme === "Escuro" ? "Claro" : "Escuro";
+  rootHtml.setAttribute("data-theme", newTheme);
+
+  // Remove as classes de ícone conflitantes para garantir uma troca limpa
+  themeIcon.classList.remove("bi-toggle2-off", "bi-lightbulb-fill", "bi-lightbulb-off-fill");
+
+  // Adiciona a classe de ícone correta com base no novo tema
+  if (newTheme === "Escuro") {
+    themeIcon.classList.add("bi-lightbulb-off-fill");
+  } else {
+    themeIcon.classList.add("bi-lightbulb-fill");
+  }
+}
+
+toggleTheme.addEventListener("click", trocaTema);
