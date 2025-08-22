@@ -200,7 +200,7 @@ body {
 .curriculo__link {
     background-color: var(--textoforte);
     color: var(--texto);
-    padding: 12px 25px;
+    padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
     font-weight: 600;
@@ -236,52 +236,7 @@ body {
     color: var(--texto);
 }
 
-@media (max-width: 1024px) {
-  :root {
-    font-size: 0.8rem;
-  }
-    .apresentacao {
-        flex-direction: column-reverse;
-        padding: 5%;
-    }
-    .apresentacao__conteudo, .apresentacao__imagem {
-        width: 100%;
-        text-align: center;
-    }
-    .apresentacao__imagem {
-        max-width: 300px;
-    }
-    .apresentacao__imagem-container {
-        max-width: 200px;
-    }
-    .icone {
-        height: 2em;
-        margin-left: 0;
-    }
-    .contato__links {
-    margin: 0;
-    gap: 1rem;
-    justify-content: center;
-}
-.contato__link {
-    background-color: var(--borda);
-    color: var(--texto);
-    padding: 0;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
-    height: auto;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1rem;
-}
-.projetos__galeria {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
-    }
-}
+
 
 /* Ajustes nos Botões e Links */
 
@@ -292,10 +247,11 @@ body {
 }
 
 .projeto__link {
-    padding: 12px 24px; /* Padding generoso para melhor clique */
+    padding: 10px 20px; /* Padding ajustado */
     gap: 8px; /* Espaço entre o texto e o ícone */
-    min-width: 150px; /* Largura mínima para consistência */
+    min-width: 140px; /* Largura mínima para consistência */
     justify-content: center;
+    font-size: 1rem;
 }
 
 /* Remove a margem excessiva dos ícones dentro dos botões */
@@ -310,9 +266,10 @@ body {
 }
 
 .contato__link {
-    padding: 12px 20px; /* Padding para tamanho ideal */
+    padding: 10px 15px; /* Padding ajustado */
     gap: 8px; /* Espaço entre o texto e o ícone */
     justify-content: center;
+    font-size: 1rem;
 }
 
 /* Remove a margem excessiva dos ícones dentro dos botões */
@@ -351,4 +308,51 @@ body {
     right: 1rem;
     cursor: pointer;
     z-index: 1001;
+}
+@media (max-width: 1024px) {
+  :root {
+    font-size: 0.8rem;
+  }
+    .apresentacao {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .apresentacao__conteudo, .apresentacao__imagem {
+        width: 100%;
+        text-align: center;
+    }
+    .apresentacao__imagem {
+        max-width: 300px;
+    }
+    .apresentacao__imagem-container {
+        max-width: 200px;
+    }
+    .icone {
+        height: 2em;
+        margin-left: 0;
+    }
+    .contato__links {
+    margin: 0;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.contato__link {
+    background-color: var(--borda);
+    color: var(--texto);
+    padding: 0 1rem;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+    height: auto;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.5rem;
+}
+.projetos__galeria {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 20px;
+    }
 }
