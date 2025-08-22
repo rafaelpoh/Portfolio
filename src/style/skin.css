@@ -247,7 +247,7 @@ body {
 }
 
 .projeto__link {
-    padding: 10px 20px; /* Padding ajustado */
+    padding: 0.3rem 0.5rem; /* Padding ajustado */ /* Padding ajustado */
     gap: 8px; /* Espaço entre o texto e o ícone */
     min-width: 140px; /* Largura mínima para consistência */
     justify-content: center;
@@ -350,9 +350,4 @@ body {
     align-items: center;
     justify-content: center;
     font-size: 0.5rem;
-}
-.projetos__galeria {
-        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-        gap: 20px;
-    }
 }
