@@ -26,17 +26,6 @@ O projeto conta com diversas funcionalidades implementadas para melhorar a exper
     - Efeito de canvas na imagem de perfil.
     - Funcionalidade de scroll suave.
 
-## 🚀 Como Executar
-
-Por ser um projeto front-end estático, não há necessidade de um servidor ou de instalação de dependências. Basta seguir os passos:
-
-1. Clone este repositório:
-   ```bash
-   git clone https://github.com/rafaelpoh/portfolio.git
-   ```
-2. Navegue até o diretório do projeto.
-3. Abra o arquivo `index.html` em seu navegador de preferência.
-
 ## 👤 Autor
 
 **Rafael Perroni**
