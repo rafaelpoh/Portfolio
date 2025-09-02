@@ -26,6 +26,9 @@ body {
     font-weight: 600;
     font-size: 1rem;
     transition: color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
 }
 
 .header__menu__link:hover {
@@ -37,6 +40,10 @@ body {
 }
 #switch {
     cursor: pointer;
+    position: fixed;
+    top: 4rem;
+    right: 1rem;
+    z-index: 1001;
 }
 
 .apresentacao {
@@ -44,15 +51,16 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 5% 10%;
-    gap: 80px;
+    gap: 2rem;
 }
 
 .apresentacao__conteudo {
     width: 60%;
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 2rem;
     border: solid 2px var(--borda);
+    border-radius: 10px;
     padding: 20px;
 }
 
@@ -153,17 +161,18 @@ body {
 }
 .projeto__links {
     display: inline-flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-content: flex-end;
     width: 100%;
     margin-top: auto;
+    gap: 2rem;
 }
 
 .projeto__link {
     display: inline-block;
     background-color: var(--borda);
     color: var(--texto);
-    padding: 0.5em 1em;
+    padding: 0.3rem 0.5rem;
     margin-top: 1rem;
     text-decoration: none;
     border-radius: 5px;
@@ -171,6 +180,10 @@ body {
     transition: background-color 0.3s ease;
     display: inline-flex;
     align-items: center;
+    gap: 1rem;
+    min-width: 5rem;
+    justify-content: center;
+    font-size: 1rem;
 }
 
 .projeto__link:hover {
@@ -181,13 +194,13 @@ body {
     margin-top: 20px;
     display: inline-flex;
     justify-content: center;
-    gap: 20px;
+    gap: 15px;
 }
 
 .contato__link {
     background-color: var(--borda);
     color: var(--texto);
-    padding: 0.5rem 0;
+    padding: 1rem 2rem;
     text-decoration: none;
     border-radius: 5px;
     font-weight: 600;
@@ -197,26 +210,28 @@ body {
     align-items: center;
     justify-content: center;
     width: 150px;
-}
-
-.icone-seta {
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    background-color: var(--borda);
-    color: var(--seta);
-    position: fixed;   
-    bottom: 20px; 
-    right: 20px; 
-    z-index: 1000; 
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    gap: 8px;
+    font-size: 1rem;
 }
 
 .contato__link:hover {
     background-color: var(--textoforte);
+}
+
+.icone-seta {
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+    background-color: var(--borda);
+    color: var(--seta);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .rodape {
@@ -226,79 +241,18 @@ body {
     color: var(--texto);
 }
 
-
-
-/* Ajustes nos Botões e Links */
-
-/* --- Botões dos Projetos --- */
-.projeto__links {
-    justify-content: center; /* Centraliza os botões */
-    gap: 2rem; /* Adiciona espaço entre os botões */
-}
-
-.projeto__link {
-    padding: 0.3rem 0.5rem; /* Padding ajustado */ /* Padding ajustado */
-    gap: 1rem; /* Espaço entre o texto e o ícone */
-    min-width: 5rem; /* Largura mínima para consistência */
-    justify-content: center;
-    font-size: 1rem;
-}
-
-/* Remove a margem excessiva dos ícones dentro dos botões */
-.projeto__link .bi {
-    margin: 0;
-}
-
-
-/* --- Botões de Contato --- */
-.contato__links {
-    gap: 15px; /* Espaço entre os links de contato */
-}
-
-.contato__link {
-    padding: 1rem 2rem; /* Padding ajustado */
-    gap: 8px; /* Espaço entre o texto e o ícone */
-    justify-content: center;
-    font-size: 1rem;
-}
-
-/* Remove a margem excessiva dos ícones dentro dos botões */
-.contato__link .bi {
-    margin: 0;
-}
-
-
-/* --- Botão Flutuante (Seta) --- */
-.icone-seta {
-    width: 48px; /* Tamanho maior para fácil acesso */
-    height: 48px;
-}
-
+.projeto__link .bi,
+.contato__link .bi,
+.header__menu__link .bi,
 .icone-seta .bi {
-    margin: 0; /* Remove margem do ícone */
-    font-size: 1.5rem; /* Tamanho do ícone ajustado */
-}
-
-/* --- Ajuste geral para links do header --- */
-.header__menu__link {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-}
-
-.header__menu__link .bi {
     margin: 0;
-    font-size: 1.5rem; /* Ajusta o tamanho dos ícones do menu */
 }
 
-/* --- Posicionamento do Botão de Tema --- */
-#switch {
-    position: fixed;
-    top: 4rem;
-    right: 1rem;
-    cursor: pointer;
-    z-index: 1001;
+.header__menu__link .bi,
+.icone-seta .bi {
+    font-size: 1.5rem;
 }
+
 @media (max-width: 1024px) {
   :root {
     font-size: 0.8rem;
@@ -322,35 +276,33 @@ body {
         margin-left: 0;
     }
     .contato__links {
-    margin: 0;
-    gap: 1rem;
-    justify-content: center;
-    margin-top: 1rem;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-}
-.contato__link {
-    background-color: var(--borda);
-    color: var(--texto);
-    padding: 0 1rem;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
-    height: auto;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 0.5rem;
-    width: 8rem;
-}
-}
-@media (max-width: 1024px) {
-  .projetos__galeria {
-    grid-template-columns: 1fr;
-  }
-  .projeto__card {
-    width: 95%;
-    margin: 0 auto;
-  }
+        margin: 0;
+        gap: 1rem;
+        justify-content: center;
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .contato__link {
+        background-color: var(--borda);
+        color: var(--texto);
+        padding: 0 1rem;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: 600;
+        transition: background-color 0.3s ease;
+        height: auto;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.5rem;
+        width: 8rem;
+    }
+    .projetos__galeria {
+        grid-template-columns: 1fr;
+    }
+    .projeto__card {
+        width: 95%;
+        margin: 0 auto;
+    }
 }
