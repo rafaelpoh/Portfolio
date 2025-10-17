@@ -47,3 +47,32 @@ function trocaTema() {
 }
 
 toggleTheme.addEventListener("click", trocaTema);
+
+const track = document.querySelector('.carousel__track');
+const items = Array.from(track.children);
+const nextButton = document.querySelector('.carousel__button--right');
+const prevButton = document.querySelector('.carousel__button--left');
+
+let currentIndex = 0;
+
+const updateCarousel = () => {
+    items.forEach((item, index) => {
+        if (index === currentIndex) {
+            item.classList.add('active');
+        } else {
+            item.classList.remove('active');
+        }
+    });
+};
+
+nextButton.addEventListener('click', () => {
+    currentIndex = (currentIndex + 1) % items.length;
+    updateCarousel();
+});
+
+prevButton.addEventListener('click', () => {
+    currentIndex = (currentIndex - 1 + items.length) % items.length;
+    updateCarousel();
+});
+
+updateCarousel();
