@@ -8,10 +8,14 @@ body {
     background: var(--fundo);
     color: var(--texto);
     font-family: var(--fonte-principal);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 main {
     transition: none;
+    flex: 1;
 }
 
 .menu-aberto-pagina main {

@@ -26,13 +26,13 @@
         <i class="bi bi-list"></i>
       </button>
       <nav class="header__menu" id="menu-lateral">
-        <a class="header__menu__link" href="#sobre"
+        <a class="header__menu__link" href="sobre.html"
           ><i class="bi bi-person-bounding-box"></i>Sobre</a
         >
-        <a class="header__menu__link" href="#projetos"
+        <a class="header__menu__link" href="projetos.html"
           ><i class="bi bi-archive-fill"></i>Projetos</a
         >
-        <a class="header__menu__link" href="#contato"
+        <a class="header__menu__link" href="contato.html"
           ><i class="bi bi-person-lines-fill"></i>Contato</a
         >
       </nav>
@@ -41,223 +41,12 @@
       <i class="bi bi-lightbulb-off-fill"></i>
     </div>
 
-    <main class="apresentacao">
-      <section class="apresentacao__conteudo" id="sobre">
-        <h1 class="apresentacao__conteudo__titulo">
-          Olá, sou o <strong class="destaque">Rafael Perroni</strong>
-        </h1>
-        <p class="apresentacao__conteudo__texto">
-          Sou um <strong class="destaque">Desenvolvedor Front-End</strong> com
-          formação em
-          <strong class="destaque">Análise e Desenvolvimento de Sistemas</strong
-          >. Tenho uma base sólida em
-          <strong class="destaque">HTML, CSS e JavaScript</strong> e estou em um
-          processo de aprendizado contínuo para dominar
-          <strong class="destaque">React e Tailwind CSS</strong>.
-        </p>
-        <p class="apresentacao__conteudo__texto">
-          Minha trajetória, que inclui um estágio no Banco do Brasil lidando com
-          bancos de dados e relatórios, me proporcionou uma visão única sobre a
-          importância da
-          <strong class="destaque">estrutura e da organização de dados</strong>.
-          Essa experiência fortalece meu trabalho no Front-End, onde a
-          organização do código é essencial.
-        </p>
-        <p class="apresentacao__conteudo__texto">
-          Estou motivado a transformar minhas ideias em realidade e contribuir
-          para projetos inovadores. Meu objetivo é continuar crescendo na área
-          de desenvolvimento, expandindo minhas competências para além do
-          Front-End e, futuramente, explorando o mundo de
-          <strong class="destaque">React Native</strong>
-          para criar aplicativos que resolvam problemas reais.
-        </p>
-      </section>
-      <div class="apresentacao__imagem-container">
-        <img
-          class="apresentacao__imagem"
-          src="./icones/fotoperfil2.WebP"
-          alt="Minha Foto"
-        />
-        <canvas id="meuCanvas" width="474" height="474"></canvas>
-      </div>
-    </main>
+    <main id="conteudo-dinamico_container"></main>
     <a class="icone-seta" href="#topo"><i class="bi bi-arrow-up"></i></a>
-    <section class="projetos" id="projetos">
-      <h2 class="projetos__titulo">Meus Projetos</h2>
-      <div class="carousel">
-        <button class="carousel__button carousel__button--left">
-          <i class="bi bi-chevron-left"></i>
-        </button>
-        <div class="carousel__track-container">
-          <div class="carousel__track">
-            <div class="projeto__card carousel__item active">
-              <img
-                class="imagem-projeto"
-                src="./icones/quadro-de-ideias.WebP"
-                alt="Imagem da tela da pagina do Quadros de ideias"
-              />
-              <h3><strong class="destaque">Quadros de ideias</strong></h3>
-              <p>
-                A ideia do projeto começou como uma lista de tarefas (to-do
-                list), mas, por ser um tipo de projeto muito comum, decidi
-                adicionar mais conteúdo. Criei, então, um sistema de quadros. No
-                mesmo ambiente, você tem à disposição: um quadro para colocar
-                post-its, visando lembrar de tarefas pendentes; um quadro para
-                desenhar, pois o desenho, às vezes, ajuda a clarear o que está
-                sendo pensado; e um quadro para escrever e desenvolver ideias.
-              </p>
-              <div class="projeto__links">
-                <a
-                  href="https://rafaelpoh.github.io/Quadro-de-ideias"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="projeto__link"
-                  >Ver Pagina <i class="bi bi-globe2"></i></a>
-                <a
-                  href="https://github.com/rafaelpoh/Quadro-de-ideias"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="projeto__link"
-                  >Ver Projeto <i class="bi bi-github"></i
-                ></a>
-              </div>
-            </div>
-            <div class="projeto__card carousel__item">
-              <img
-                class="imagem-projeto"
-                src="./icones/JPerroni.WebP"
-                alt="Imagem da pagina da JPerroni"
-              />
-              <h3><strong class="destaque">JPerroni</strong></h3>
-              <p>
-                Pagina pessoal, para a empresa da familia, desenvolvida em HTML,
-                CSS, ainda não possui JavaScript, mas em breve será desenvolvido
-                um sistema de calculo para os crientes fazerem suas próprias
-                consultas de valores.
-              </p>
-              <div class="projeto__links">
-                <a
-                  href="https://jperroni.com.br"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="projeto__link"
-                  >Ver Pagina <i class="bi bi-globe2"></i></a>
-                <a
-                  href="https://github.com/rafaelpoh/Jperroni"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="projeto__link"
-                  >Ver Projeto <i class="bi bi-github"></i
-                ></a>
-              </div>
-            </div>
-            <div class="projeto__card carousel__item">
-              <img
-                class="imagem-projeto"
-                src="./icones/churras.WebP"
-                alt="Imagem do Projeto Churrascometro"
-              />
-              <h3><strong class="destaque">Churrascometro</strong></h3>
-              <p>
-                A lógica por trás é toda desenvolvida em JavaScript, usando
-                quantos adultos, quantas crianças e quantas horas irá durar o
-                evento calculando quanta carne será necessário, bebidas
-                alcoolicas, refrigerante e aperitivos
-              </p>
-              <div class="projeto__links">
-                <a
-                  href="https://rafaelpoh.github.io/Churrascometro/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="projeto__link"
-                  >Ver Pagina <i class="bi bi-globe2"></i></a>
-                <a
-                  href="https://github.com/rafaelpoh/Churrascometro"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="projeto__link"
-                  >Ver Projeto <i class="bi bi-github"></i
-                ></a>
-              </div>
-            </div>
-            <div class="projeto__card carousel__item">
-              <img
-                class="imagem-projeto"
-                src="./icones/jogo-da-veia.WebP"
-                alt="Imagem do Projeto do Jogo da Velha"
-              />
-              <h3><strong class="destaque">Jogo da velha</strong></h3>
-              <p>
-                Uma brincadeira de criança, toda lógica desenvolvida em
-                JavaScript, o jogo é responsivo e funciona em qualquer
-                dispositivo.
-              </p>
-              <div class="projeto__links">
-                <a
-                  href="https://rafaelpoh.github.io/jogo-da-veia/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="projeto__link"
-                  >Ver Pagina <i class="bi bi-globe2"></i></a>
-                <a
-                  href="https://github.com/rafaelpoh/jogo-da-veia"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="projeto__link"
-                  >Ver Projeto <i class="bi bi-github"></i
-                ></a>
-              </div>
-            </div>
-          </div>
-        </div>
-        <button class="carousel__button carousel__button--right">
-          <i class="bi bi-chevron-right"></i>
-        </button>
-      </div>
-    </section>
-
-    <section class="contato" id="contato">
-      <h2 class="contato__titulo">Entre em Contato</h2>
-      <p class="contato__texto">Gostou do que viu? Vamos conversar!</p>
-      <ul class="contato__links">
-        <li>
-          <a
-            href="https://www.linkedin.com/in/rafaelperroni"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="contato__link"
-            >LinkedIn<i class="bi bi-linkedin"></i>
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://github.com/rafaelpoh"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="contato__link"
-            >GitHub<i class="bi bi-github"></i
-          ></a>
-        </li>
-        <li>
-          <a href="mailto:rafaelperroni89@gmail.com" class="contato__link"
-            >Email<i class="bi bi-envelope-at-fill"></i
-          ></a>
-        </li>
-        <li>
-          <a
-            href="./CV-ptbr.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="contato__link"
-            >Curriculo<i class="bi bi-file-person-fill"></i
-          ></a>
-        </li>
-      </ul>
-    </section>
-
     <footer class="rodape">
       <p>Desenvolvido por <strong class="destaque">Rafael Perroni</strong></p>
     </footer>
+
 
     <script src="script.js"></script>
   </body>
