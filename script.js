@@ -76,3 +76,34 @@ prevButton.addEventListener('click', () => {
 });
 
 updateCarousel();
+
+document.addEventListener('DOMContentLoaded', function () {
+    const menu = document.getElementById('menu-lateral');
+    const abrirMenuBtn = document.querySelector('button[aria-label="Abrir menu"]');
+    const fecharMenuBtn = menu.querySelector('button[aria-label="Fechar menu"]');
+    const menuLinks = menu.querySelectorAll('a');
+
+    function toggleMenu() {
+        menu.classList.toggle('menu-aberto');
+        document.body.classList.toggle('menu-aberto-pagina');
+        const abrirMenuIcon = abrirMenuBtn.querySelector('i');
+        if (menu.classList.contains('menu-aberto')) {
+            abrirMenuIcon.classList.remove('bi-list');
+            abrirMenuIcon.classList.add('bi-x');
+        } else {
+            abrirMenuIcon.classList.remove('bi-x');
+            abrirMenuIcon.classList.add('bi-list');
+        }
+    }
+
+    abrirMenuBtn.addEventListener('click', toggleMenu);
+    fecharMenuBtn.addEventListener('click', toggleMenu);
+
+    menuLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            if (menu.classList.contains('menu-aberto')) {
+                toggleMenu();
+            }
+        });
+    });
+});
