@@ -337,6 +337,21 @@ main {
         font-size: 0.5rem;
         width: 8rem;
     }
+
+    .habilidades__container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "programacao"
+            "ferramentas"
+            "idiomas";
+    }
+
+    .habilidades__programacao,
+    .habilidades__ferramentas,
+    .habilidades__idiomas {
+        width: 100%;
+        display: block;
+    }
 }
 
 @media (max-width: 768px) {
@@ -402,4 +417,87 @@ main {
 
 .carousel__item:not(.active) {
     display: none;
+}
+
+.habilidades {
+    padding: 5% 10%;
+    text-align: center;
+}
+
+.habilidades__titulo {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--textoforte);
+}
+
+.habilidades__container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "programacao"
+        "ferramentas"
+        "idiomas";
+    gap: 2rem;
+}
+
+.habilidades__programacao {
+    grid-area: programacao;
+}
+
+.habilidades__ferramentas {
+    grid-area: ferramentas;
+}
+
+.habilidades__idiomas {
+    grid-area: idiomas;
+}
+
+.habilidades__subtitulo {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--textoforte);
+}
+
+.habilidades__lista {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.habilidades__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+    background-color: var(--cor-hover);
+}
+
+.habilidades__imagem {
+    width: 50px;
+    height: 50px;
+}
+
+.habilidades__nome {
+    font-weight: 600;
+}
+
+.habilidades__nivel {
+    font-style: italic;
+}
+
+.habilidades__idiomas-box {
+    padding: 1rem;
+    border: 1px solid var(--borda);
+    border-radius: 10px;
+    background-color: var(--cor-hover);
+}
+
+.habilidades__idioma {
+    margin-bottom: 0.5rem;
 }

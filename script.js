@@ -1,3 +1,6 @@
+import { carregarHabilidades } from './habilidades.js';
+import { getProjects } from './projetos.js';
+
 document.addEventListener('DOMContentLoaded', function () {
     const menu = document.getElementById('menu-lateral');
     const abrirMenuBtn = document.querySelector('button[aria-label="Abrir menu"]');
@@ -38,49 +41,25 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    function initCarousel() {
-        const track = document.querySelector('.carousel__track');
-        if (track) {
-            const items = Array.from(track.children);
-            const nextButton = document.querySelector('.carousel__button--right');
-            const prevButton = document.querySelector('.carousel__button--left');
-
-            let currentIndex = 0;
-
-            const updateCarousel = () => {
-                items.forEach((item, index) => {
-                    if (index === currentIndex) {
-                        item.classList.add('active');
-                    } else {
-                        item.classList.remove('active');
-                    }
-                });
-            };
-
-            nextButton.addEventListener('click', () => {
-                currentIndex = (currentIndex + 1) % items.length;
-                updateCarousel();
-            });
-
-            prevButton.addEventListener('click', () => {
-                currentIndex = (currentIndex - 1 + items.length) % items.length;
-                updateCarousel();
-            });
-
-            updateCarousel();
-        }
-    }
-
     function loadContent(url) {
         fetch(url)
             .then(response => response.text())
             .then(html => {
                 contentContainer.innerHTML = html;
+
+                // Explicitly call functions based on the loaded URL
                 if (url === 'sobre.html') {
                     initCanvas();
-                }
-                if (url === 'projetos.html') {
-                    initCarousel();
+                } else if (url === 'habilidades.html') {
+                    // Ensure the habilidadesContainer exists before calling carregarHabilidades
+                    if (document.getElementById('habilidades-container')) {
+                        carregarHabilidades();
+                    }
+                } else if (url === 'projetos.html') {
+                    // Ensure the carouselTrack exists before calling getProjects
+                    if (document.querySelector('.carousel__track')) {
+                        getProjects();
+                    }
                 }
             });
     }
@@ -101,6 +80,42 @@ document.addEventListener('DOMContentLoaded', function () {
     // Load initial content
     loadContent('sobre.html');
 });
+
+export function initCarousel() {
+    const track = document.querySelector('.carousel__track');
+    if (track) {
+        const items = Array.from(track.children);
+        const nextButton = document.querySelector('.carousel__button--right');
+        const prevButton = document.querySelector('.carousel__button--left');
+
+        let currentIndex = 0;
+
+        const updateCarousel = () => {
+            items.forEach((item, index) => {
+                if (index === currentIndex) {
+                    item.classList.add('active');
+                } else {
+                    item.classList.remove('active');
+                } 
+            });
+            if (items.length > 0) {
+                track.style.transform = `translateX(-${currentIndex * 100}%)`;
+            }
+        };
+
+        nextButton.addEventListener('click', () => {
+            currentIndex = (currentIndex + 1) % items.length;
+            updateCarousel();
+        });
+
+        prevButton.addEventListener('click', () => {
+            currentIndex = (currentIndex - 1 + items.length) % items.length;
+            updateCarousel();
+        });
+
+        updateCarousel();
+    }
+}
 
 const toggleTheme = document.getElementById("switch");
 const themeIcon = toggleTheme.querySelector("i"); // Seleciona o elemento <i> dentro do botão
