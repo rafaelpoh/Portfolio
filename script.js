@@ -108,9 +108,7 @@ export function initCarousel() {
                     item.classList.remove('active');
                 } 
             });
-            if (items.length > 0) {
-                track.style.transform = `translateX(-${currentIndex * 100}%)`;
-            }
+
         };
 
         nextButton.addEventListener('click', () => {
