@@ -25,15 +25,25 @@ document.addEventListener('DOMContentLoaded', function () {
         const canvas = document.getElementById('meuCanvas');
         if (canvas && container) {
             const ctx = canvas.getContext('2d');
-            const img = new Image();
-            img.src = './icones/fotoperfil.WebP';
+            const canvasImg = new Image();
+            const profileImg = document.querySelector('.apresentacao__imagem');
 
-            img.onload = () => {
-                container.addEventListener('mouseenter', () => {
-                    ctx.clearRect(0, 0, canvas.width, canvas.height);
-                    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-                });
-            };
+            fetch('projetos.json')
+                .then(response => response.json())
+                .then(data => {
+                    canvasImg.src = data.sobre.foto; // Use foto from projetos.json for canvas
+                    if (profileImg) {
+                        profileImg.src = data.sobre.foto2; // Use foto2 from projetos.json for the <img> tag
+                    }
+
+                    canvasImg.onload = () => {
+                        container.addEventListener('mouseenter', () => {
+                            ctx.clearRect(0, 0, canvas.width, canvas.height);
+                            ctx.drawImage(canvasImg, 0, 0, canvas.width, canvas.height);
+                        });
+                    };
+                })
+                .catch(error => console.error('Error loading projetos.json:', error));
 
             container.addEventListener('mouseleave', () => {
                 ctx.clearRect(0, 0, canvas.width, canvas.height);

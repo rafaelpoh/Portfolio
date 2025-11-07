@@ -1,4 +1,9 @@
 {
+  "sobre": {
+    "nome": "Rafael Perroni",
+    "foto": "./icones/fotoperfil.WebP",
+    "foto2": "./icones/fotoperfil2.WebP"
+  },
   "projetos": [
     {
       "imagem": "./icones/quadro-de-ideias.WebP",
