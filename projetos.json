@@ -20,6 +20,13 @@
       "github": "https://github.com/rafaelpoh/Jperroni"
     },
     {
+      "imagem": "./icones/mega-sorte.WebP",
+      "titulo": "Mega-Sorte",
+      "descricao": "Uma aplicação para colocar alguns conceitos de programação em pratica, condicional, laço de repetição e funções. Na faculdade um professor pediu para fazer um programa parecido e sempre que estou aprendendo alguma linguagem nova gosto de fazer esse projeto.",
+      "pagina": "https://rafaelpoh.github.io/mega-sorte",
+      "github": "https://github.com/rafaelpoh/mega-sorte"
+    },
+    {
       "imagem": "./icones/churras.WebP",
       "titulo": "Churrascometro",
       "descricao": "A lógica por trás é toda desenvolvida em JavaScript, usando quantos adultos, quantas crianças e quantas horas irá durar o evento calculando quanta carne será necessário, bebidas alcoolicas, refrigerante e aperitivos",
