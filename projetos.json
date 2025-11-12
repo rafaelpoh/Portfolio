@@ -6,35 +6,42 @@
   },
   "projetos": [
     {
-      "imagem": "./icones/quadro-de-ideias.WebP",
+      "imagem": "./imagens/spotilike.WebP",
+      "titulo": "spotilike",
+      "descricao": "A ideia do projeto começou com um bootcamp intensivo front-end da alura, depois de adquirir mais conhecimento em JavaScript, decidi aprimorar o projeto, ainda é um projeto em desenvolvimento, mas esta sendo divertido, a pagina já faz buscas por artistas direto da API e pretendo colocar função de tocar musicas.",
+      "pagina": "https://rafaelpoh.github.io/spotilike",
+      "github": "https://github.com/rafaelpoh/spotilike"
+    },
+    {
+      "imagem": "./imagens/quadro-de-ideias.WebP",
       "titulo": "Quadros de ideias",
       "descricao": "A ideia do projeto começou como uma lista de tarefas (to-do list), mas, por ser um tipo de projeto muito comum, decidi adicionar mais conteúdo. Criei, então, um sistema de quadros. No mesmo ambiente, você tem à disposição: um quadro para colocar post-its, visando lembrar de tarefas pendentes; um quadro para desenhar, pois o desenho, às vezes, ajuda a clarear o que está sendo pensado; e um quadro para escrever e desenvolver ideias.",
       "pagina": "https://rafaelpoh.github.io/Quadro-de-ideias",
       "github": "https://github.com/rafaelpoh/Quadro-de-ideias"
     },
     {
-      "imagem": "./icones/JPerroni.WebP",
+      "imagem": "./imagens/JPerroni.WebP",
       "titulo": "JPerroni",
       "descricao": "Pagina pessoal, para a empresa da familia, desenvolvida em HTML, CSS, ainda não possui JavaScript, mas em breve será desenvolvido um sistema de calculo para os crientes fazerem suas próprias consultas de valores.",
       "pagina": "https://jperroni.com.br",
       "github": "https://github.com/rafaelpoh/Jperroni"
     },
     {
-      "imagem": "./icones/mega-sorte.WebP",
+      "imagem": "./imagens/mega-sorte.WebP",
       "titulo": "Mega-Sorte",
       "descricao": "Uma aplicação para colocar alguns conceitos de programação em pratica, condicional, laço de repetição e funções. Na faculdade um professor pediu para fazer um programa parecido e sempre que estou aprendendo alguma linguagem nova gosto de fazer esse projeto.",
       "pagina": "https://rafaelpoh.github.io/mega-sorte",
       "github": "https://github.com/rafaelpoh/mega-sorte"
     },
     {
-      "imagem": "./icones/churras.WebP",
+      "imagem": "./imagens/churras.WebP",
       "titulo": "Churrascometro",
       "descricao": "A lógica por trás é toda desenvolvida em JavaScript, usando quantos adultos, quantas crianças e quantas horas irá durar o evento calculando quanta carne será necessário, bebidas alcoolicas, refrigerante e aperitivos",
       "pagina": "https://rafaelpoh.github.io/Churrascometro/",
       "github": "https://github.com/rafaelpoh/Churrascometro"
     },
     {
-      "imagem": "./icones/jogo-da-veia.WebP",
+      "imagem": "./imagens/jogo-da-veia.WebP",
       "titulo": "Jogo da velha",
       "descricao": "Uma brincadeira de criança, toda lógica desenvolvida em JavaScript, o jogo é responsivo e funciona em qualquer dispositivo.",
       "pagina": "https://rafaelpoh.github.io/jogo-da-veia/",
