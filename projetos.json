@@ -6,6 +6,13 @@
   },
   "projetos": [
     {
+      "imagem": "./imagens/movielist.WebP",
+      "titulo": "MovieList",
+      "descricao": "O projeto visa ser a sua ferramenta de consulta essencial para escolher o que assistir. Apresentamos trailers (quando disponíveis) para que a decisão seja mais rápida, informada e satisfatória.",
+      "pagina": "https://rafaelpoh.github.io/movielist",
+      "github": "https://github.com/rafaelpoh/movielist"
+    },
+    {
       "imagem": "./imagens/spotilike.WebP",
       "titulo": "spotilike",
       "descricao": "A concepção deste projeto surgiu a partir de um bootcamp intensivo de front-end da Alura. Após adquirir mais conhecimento e experiência, decidi aprimorá-lo. Atualmente, o projeto está em desenvolvimento. A página já permite realizar buscas por artistas ou faixas de música diretamente via API, e também apresenta playlists aleatórias na página inicial, oferecendo diversas possibilidades de descobertas musicais.",
