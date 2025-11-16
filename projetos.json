@@ -8,7 +8,7 @@
     {
       "imagem": "./imagens/movielist.WebP",
       "titulo": "MovieList",
-      "descricao": "O projeto visa ser a sua ferramenta de consulta essencial para escolher o que assistir. Apresentamos trailers (quando disponíveis) para que a decisão seja mais rápida, informada e satisfatória.",
+      "descricao": "Aplicação desenvolvida para ajudar o usuário a decidir rapidamente o que assistir. Utiliza a API TMDB para exibir trailers (quando disponíveis), filmes em cartaz, próximos lançamentos e oferece um sistema de busca eficiente. A interface prioriza objetividade e clareza para facilitar decisões informadas e agradáveis.",
       "pagina": "https://rafaelpoh.github.io/movielist",
       "github": "https://github.com/rafaelpoh/movielist"
     },
