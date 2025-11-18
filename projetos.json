@@ -15,7 +15,7 @@
     {
       "imagem": "./imagens/spotilike.WebP",
       "titulo": "spotilike",
-      "descricao": "A concepção deste projeto surgiu a partir de um bootcamp intensivo de front-end da Alura. Após adquirir mais conhecimento e experiência, decidi aprimorá-lo. Atualmente, o projeto está em desenvolvimento. A página já permite realizar buscas por artistas ou faixas de música diretamente via API, e também apresenta playlists aleatórias na página inicial, oferecendo diversas possibilidades de descobertas musicais.",
+      "descricao": "A concepção deste projeto surgiu a partir de um bootcamp intensivo de front-end da Alura. Após adquirir mais conhecimento e experiência, decidi aprimorá-lo. A página permite realizar buscas por artistas ou faixas de música diretamente via API, e também apresenta playlists aleatórias na página inicial, oferecendo diversas possibilidades de descobertas musicais.",
       "pagina": "https://rafaelpoh.github.io/Spotilike",
       "github": "https://github.com/rafaelpoh/spotilike"
     },
