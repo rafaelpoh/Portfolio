@@ -14,14 +14,14 @@
     },
     {
       "imagem": "./imagens/spotilike.WebP",
-      "titulo": "spotilike",
+      "titulo": "Spotilike",
       "descricao": "A concepção deste projeto surgiu a partir de um bootcamp intensivo de front-end da Alura. Após adquirir mais conhecimento e experiência, decidi aprimorá-lo. A página permite realizar buscas por artistas ou faixas de música diretamente via API, e também apresenta playlists aleatórias na página inicial, oferecendo diversas possibilidades de descobertas musicais.",
       "pagina": "https://rafaelpoh.github.io/Spotilike",
       "github": "https://github.com/rafaelpoh/spotilike"
     },
     {
       "imagem": "./imagens/quadro-de-ideias.WebP",
-      "titulo": "Quadros de ideias",
+      "titulo": "Quadros de Ideias",
       "descricao": "A ideia do projeto começou como uma lista de tarefas (to-do list), mas, por ser um tipo de projeto muito comum, decidi adicionar mais conteúdo. Criei, então, um sistema de quadros. No mesmo ambiente, você tem à disposição: um quadro para colocar post-its, visando lembrar de tarefas pendentes; um quadro para desenhar, pois o desenho, às vezes, ajuda a clarear o que está sendo pensado; e um quadro para escrever e desenvolver ideias.",
       "pagina": "https://rafaelpoh.github.io/Quadro-de-ideias",
       "github": "https://github.com/rafaelpoh/Quadro-de-ideias"
