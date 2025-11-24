@@ -1,7 +1,7 @@
 import { initCarousel } from './script.js';
 
 export async function getProjects() {
-    const response = await fetch('projetos.json');
+    const response = await fetch('assets/data/projetos.json');
     const projects = await response.json();
     
     const carouselTrack = document.querySelector('.carousel__track');

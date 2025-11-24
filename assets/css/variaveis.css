@@ -11,9 +11,9 @@
 
 :root[data-theme='Claro']{
     --texto: #0c3765;
-    --fundo: linear-gradient(to bottom right, #c0cbe6, #bfcddf);
+    --fundo: linear-gradient(to bottom, #c0cbe6, #bfcddf);
     --fundonav: linear-gradient(to bottom right, #bdc3d3, #a4afbe);
-    --borda: #2ab3dd  ;
+    --borda: #058db6  ;
     --fonte-principal: 'Poppins', sans-serif;
     --textoforte: #240f59 ;
     --cor-hover: #7ddcff ;

@@ -28,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const canvasImg = new Image();
             const profileImg = document.querySelector('.apresentacao__imagem');
 
-            fetch('projetos.json')
+            fetch('assets/data/projetos.json')
                 .then(response => response.json())
                 .then(data => {
                     canvasImg.src = data.sobre.foto; // Use foto from projetos.json for canvas

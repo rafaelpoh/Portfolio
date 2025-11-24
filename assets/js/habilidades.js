@@ -6,7 +6,7 @@ export function carregarHabilidades() {
     }
 
     habilidadesContainer.innerHTML = ''; // Limpa o conteúdo anterior para garantir que não haja duplicatas
-    fetch('projetos.json')
+    fetch('assets/data/projetos.json')
         .then(response => response.json())
         .then(data => {
             const { programacao, ferramentas, idiomas } = data.habilidades;
