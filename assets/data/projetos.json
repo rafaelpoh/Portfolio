@@ -6,6 +6,13 @@
   },
   "projetos": [
     {
+      "imagem": "assets/img/criptohunter.WebP",
+      "titulo": "CriptoHunter",
+      "descricao": "Aplicação de monitoramento de criptomoedas que utiliza a CoinGecko API para exibir as principais moedas do mercado, destacando as 7 criptos com maior variação percentual positiva e as 7 com maior variação percentual negativa; a ferramenta também permite a busca por ativos específicos e apresenta uma tela de detalhes completa ao selecionar qualquer criptomoeda.",
+      "pagina": "https://rafaelpoh.github.io/CriptoHunter",
+      "github": "https://github.com/rafaelpoh/CriptoHunter"
+    },
+    {
       "imagem": "assets/img/movielist.WebP",
       "titulo": "MovieList",
       "descricao": "Aplicação desenvolvida para ajudar o usuário a decidir rapidamente o que assistir. Utiliza a API TMDB para exibir trailers (quando disponíveis), filmes em cartaz, próximos lançamentos e oferece um sistema de busca eficiente. A interface prioriza objetividade e clareza para facilitar decisões informadas e agradáveis.",
