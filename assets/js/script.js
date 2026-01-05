@@ -1,5 +1,6 @@
 import { carregarHabilidades } from './habilidades.js';
 import { getProjects } from './projetos.js';
+import { getCursos } from './cursos.js';
 
 document.addEventListener('DOMContentLoaded', function () {
     const menu = document.getElementById('menu-lateral');
@@ -70,6 +71,11 @@ document.addEventListener('DOMContentLoaded', function () {
                     if (document.querySelector('.carousel__track')) {
                         getProjects();
                     }
+                } else if (url === 'cursos.html') {
+                    // Ensure the carouselTrack exists before calling getCursos
+                    if (document.querySelector('.cursos .carousel__track')) {
+                        getCursos();
+                    }
                 }
             });
     }
@@ -91,12 +97,13 @@ document.addEventListener('DOMContentLoaded', function () {
     loadContent('sobre.html');
 });
 
-export function initCarousel() {
-    const track = document.querySelector('.carousel__track');
-    if (track) {
+export function initCarousel(carouselSelector) {
+    const carousel = document.querySelector(carouselSelector);
+    if (carousel) {
+        const track = carousel.querySelector('.carousel__track');
         const items = Array.from(track.children);
-        const nextButton = document.querySelector('.carousel__button--right');
-        const prevButton = document.querySelector('.carousel__button--left');
+        const nextButton = carousel.querySelector('.carousel__button--right');
+        const prevButton = carousel.querySelector('.carousel__button--left');
 
         let currentIndex = 0;
 

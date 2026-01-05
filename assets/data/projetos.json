@@ -8,7 +8,7 @@
     {
       "imagem": "assets/img/serielist.WebP",
       "titulo": "SerieList",
-      "descricao": "O projeto SerieList é uma aplicação web desenvolvida para os amantes de séries, permitindo a exploração de um vasto catálogo de títulos. Construído com HTML, CSS e JavaScript, o site consome dados da API The Movie Database (TMDb) para exibir dinamicamente as séries mais populares e as que estão atualmente em exibição. Além da navegação intuitiva, a plataforma conta com um sistema de busca para encontrar séries específicas e um recurso que permite visualizar o trailer em um modal, oferecendo uma experiência de usuário rica e focada na descoberta de conteúdo",
+      "descricao": "O projeto SerieList é uma aplicação web desenvolvida para os amantes de séries, permitindo a exploração de um vasto catálogo de títulos. Construído com HTML, CSS e JavaScript, o site consome dados da API The Movie Database (TMDb) para exibir dinamicamente as séries mais populares e as que estão atualmente em exibição. Além da navegação intuitiva, a plataforma conta com um sistema de busca para encontrar séries específicas e um recurso que permite visualizar o trailer em um modal, oferecendo uma experiência de usuário rica e focada na descoberta de conteúdo.",
       "pagina": "https://rafaelpoh.github.io/serielist/",
       "github": "https://github.com/rafaelpoh/serielist"
     },
@@ -57,7 +57,7 @@
     {
       "imagem": "assets/img/churras.WebP",
       "titulo": "Churrascometro",
-      "descricao": "A lógica por trás é toda desenvolvida em JavaScript, usando quantos adultos, quantas crianças e quantas horas irá durar o evento calculando quanta carne será necessário, bebidas alcoolicas, refrigerante e aperitivos",
+      "descricao": "A lógica por trás é toda desenvolvida em JavaScript, usando quantos adultos, quantas crianças e quantas horas irá durar o evento calculando quanta carne será necessário, bebidas alcoolicas, refrigerante e aperitivos.",
       "pagina": "https://rafaelpoh.github.io/Churrascometro/",
       "github": "https://github.com/rafaelpoh/Churrascometro"
     },

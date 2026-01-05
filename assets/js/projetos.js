@@ -4,7 +4,7 @@ export async function getProjects() {
     const response = await fetch('assets/data/projetos.json');
     const projects = await response.json();
     
-    const carouselTrack = document.querySelector('.carousel__track');
+    const carouselTrack = document.querySelector('.projetos .carousel__track');
 
     // Clear previous content to prevent duplication on re-load
     if (carouselTrack) {
@@ -45,7 +45,7 @@ export async function getProjects() {
         }
     });
 
-    initCarousel();
+    initCarousel('.projetos .carousel');
 }
 
 // initCarousel function should be defined globally or imported if needed

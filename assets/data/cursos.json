@@ -1,0 +1,28 @@
+{
+  "cursos": [
+    {
+      "titulo": "Curso Superior de Tecnologia em Análise e Desenvolvimento de sistemas",
+      "imagem": "assets/img/diploma.WebP",
+      "descricao": "Curso superior de tecnologia focado em análise e desenvolvimento de sistemas, preparando profissionais para atuar no mercado de TI com habilidades em programação, banco de dados e gestão de projetos.",
+      "certificado": "./assets/pdfs/RAFAEL_PERRONI_CSTADS.pdf"
+    },
+    {
+      "titulo": "HTML, CSS e JavaScript",
+      "imagem": "assets/img/DVWBRP14HT28111080.WebP",
+      "descricao": "Modulo referente a HTML, CSS e JavaScript do curso Desenvolvimento Web Full Stack.",
+      "certificado": "https://programadorbr.com/certificado/DVWBRP14HT28111080"
+    },
+    {
+      "titulo": "Bootcamp Santader - Front-End",
+      "imagem": "assets/img/dio_santander_front-end.WebP",
+      "descricao": "Bootcamp Santander - Front-End oferecido pela Digital Innovation One, focado em desenvolvimento web front-end utilizando HTML, CSS e JavaScript para criar interfaces de usuário responsivas e interativas, com diversos projetos desenvolvidos e mentorias.",
+      "certificado": "./assets/pdfs/Santander_Front-End.pdf"
+    },
+    {
+      "titulo": "Universia Fundamentos de IA Generativa",
+      "imagem": "assets/img/dio_universia_fundamentos_de_IA.WebP",
+      "descricao": "Bootcamp para introduzir conhecimentos sobre Inteligência Artificial Generativa, abordando conceitos fundamentais, aplicações práticas e ferramentas utilizadas na área, com foco em capacitar os participantes para entender e utilizar IA generativa em diversos contextos, com alguns projetos e mentorias.",
+      "certificado": "./assets/pdfs/Universia_Fundamentos_de_IA.pdf"
+    }
+  ]
+}
