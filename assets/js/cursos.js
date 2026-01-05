@@ -13,9 +13,9 @@ export async function getCursos() {
 
     cursos.forEach(curso => {
         const cursoCard = `
-            <div class="curso__card carousel__item">
+            <div class="projeto__card carousel__item">
               <img
-                class="imagem-curso"
+                class="imagem-projeto"
                 src="${curso.imagem}"
                 alt="${curso.titulo}"
               />
@@ -23,12 +23,12 @@ export async function getCursos() {
               <p>
                 ${curso.descricao}
               </p>
-              <div class="curso__links">
+              <div class="projeto__links">
                 <a
                   href="${curso.certificado}"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="curso__link"
+                  class="projeto__link"
                   >Ver Certificado <i class="bi bi-patch-check-fill"></i></a>
               </div>
             </div>
