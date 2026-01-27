@@ -6,6 +6,13 @@
   },
   "projetos": [
     {
+      "imagem": "assets/img/CO2calculadora.WebP",
+      "titulo": "CO2calculadora",
+      "descricao": "Calculadora de emissões de CO2 desenvolvida de forma nativa com HTML5, CSS3 e JavaScript. O projeto utiliza a API OpenRouteService para realizar o roteamento geoespacial, permitindo o cálculo preciso da distância entre dois pontos (urbanos ou intermunicipais). A aplicação converte esses dados em métricas de impacto ambiental, aplicando fatores de emissão baseados no meio de transporte selecionado.",
+      "pagina": "https://rafaelpoh.github.io/CO2calculadora/",
+      "github": "https://github.com/rafaelpoh/CO2calculadora"
+    },
+    {
       "imagem": "assets/img/serielist.WebP",
       "titulo": "SerieList",
       "descricao": "O projeto SerieList é uma aplicação web desenvolvida para os amantes de séries, permitindo a exploração de um vasto catálogo de títulos. Construído com HTML, CSS e JavaScript, o site consome dados da API The Movie Database (TMDb) para exibir dinamicamente as séries mais populares e as que estão atualmente em exibição. Além da navegação intuitiva, a plataforma conta com um sistema de busca para encontrar séries específicas e um recurso que permite visualizar o trailer em um modal, oferecendo uma experiência de usuário rica e focada na descoberta de conteúdo.",
