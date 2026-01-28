@@ -19,6 +19,12 @@
       "certificado": "./assets/pdfs/Santander_Front-End.pdf"
     },
     {
+      "titulo": "Github Copilot",
+      "imagem": "assets/img/Github_Copilot.WebP",
+      "descricao": "Bootcamp sobre o Github Copilot, uma ferramenta de inteligência artificial desenvolvida pela GitHub em parceria com a OpenAI, que auxilia desenvolvedores na escrita de código, oferecendo sugestões e completando trechos de código automaticamente para aumentar a produtividade e eficiência no desenvolvimento de software.",
+      "certificado": "./assets/pdfs/Github_Copilot.pdf"
+    },
+    {
       "titulo": "Universia Fundamentos de IA Generativa",
       "imagem": "assets/img/dio_universia_fundamentos_de_IA.WebP",
       "descricao": "Bootcamp para introduzir conhecimentos sobre Inteligência Artificial Generativa, abordando conceitos fundamentais, aplicações práticas e ferramentas utilizadas na área, com foco em capacitar os participantes para entender e utilizar IA generativa em diversos contextos, com alguns projetos e mentorias.",
