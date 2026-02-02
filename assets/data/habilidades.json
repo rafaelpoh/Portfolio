@@ -1,0 +1,46 @@
+{
+  "habilidades": {
+    "programacao": [
+      {
+        "nome": "HTML",
+        "imagem": "assets/icons/html.png"
+      },
+      {
+        "nome": "CSS",
+        "imagem": "assets/icons/css.png"
+      },
+      {
+        "nome": "JavaScript",
+        "imagem": "assets/icons/js.png"
+      }
+    ],
+    "ferramentas": [
+      {
+        "nome": "VScode",
+        "imagem": "assets/icons/vscode.png"
+      },
+      {
+        "nome": "Git",
+        "imagem": "assets/icons/git.png"
+      },
+      {
+        "nome": "GitHub",
+        "imagem": "assets/icons/github.png"
+      }
+    ],
+    "idiomas": [
+      {
+        "nome": "Portugues",
+        "nivel": "Nativo"
+      },
+      {
+        "nome": "Inglês",
+        "nivel": "Intermediario/Avançado"
+      },
+      {
+        "nome": "Espanhol",
+        "nivel": "Básico"
+      }
+    ]
+  }
+}

@@ -1,3 +1,39 @@
+"use strict";
+
+function createSkillSection(title, skills, container) {
+    const sectionDiv = document.createElement('div');
+    sectionDiv.classList.add(`habilidades__${title.toLowerCase().replace(/ /g, '-')}`);
+
+    const sectionTitle = document.createElement('h3');
+    sectionTitle.classList.add('habilidades__subtitulo');
+    sectionTitle.textContent = title;
+    sectionDiv.appendChild(sectionTitle);
+
+    const skillList = document.createElement('ul');
+    skillList.classList.add('habilidades__lista');
+
+    skills.forEach(skill => {
+        const listItem = document.createElement('li');
+        listItem.classList.add('habilidades__item');
+
+        const image = document.createElement('img');
+        image.src = skill.imagem;
+        image.alt = skill.nome;
+        image.classList.add('habilidades__imagem');
+        listItem.appendChild(image);
+
+        const name = document.createElement('span');
+        name.classList.add('habilidades__nome');
+        name.textContent = skill.nome;
+        listItem.appendChild(name);
+
+        skillList.appendChild(listItem);
+    });
+
+    sectionDiv.appendChild(skillList);
+    container.appendChild(sectionDiv);
+}
+
 export function carregarHabilidades() {
     const habilidadesContainer = document.getElementById('habilidades-container');
     if (!habilidadesContainer) {
@@ -6,78 +42,15 @@ export function carregarHabilidades() {
     }
 
     habilidadesContainer.innerHTML = ''; // Limpa o conteúdo anterior para garantir que não haja duplicatas
-    fetch('assets/data/projetos.json')
+    fetch('assets/data/habilidades.json')
         .then(response => response.json())
         .then(data => {
             const { programacao, ferramentas, idiomas } = data.habilidades;
 
-            // Create programming languages section
-            const programacaoDiv = document.createElement('div');
-            programacaoDiv.classList.add('habilidades__programacao');
+            createSkillSection('Linguagens de Programação', programacao, habilidadesContainer);
+            createSkillSection('Ferramentas', ferramentas, habilidadesContainer);
 
-            const programacaoTitle = document.createElement('h3');
-            programacaoTitle.classList.add('habilidades__subtitulo');
-            programacaoTitle.textContent = 'Linguagens de Programação';
-            programacaoDiv.appendChild(programacaoTitle);
-
-            const programacaoList = document.createElement('ul');
-            programacaoList.classList.add('habilidades__lista');
-
-            programacao.forEach(habilidade => {
-                const listItem = document.createElement('li');
-                listItem.classList.add('habilidades__item');
-
-                const imagem = document.createElement('img');
-                imagem.src = habilidade.imagem;
-                imagem.alt = habilidade.nome;
-                imagem.classList.add('habilidades__imagem');
-                listItem.appendChild(imagem);
-
-                const nome = document.createElement('span');
-                nome.classList.add('habilidades__nome');
-                nome.textContent = habilidade.nome;
-                listItem.appendChild(nome);
-
-                programacaoList.appendChild(listItem);
-            });
-
-            programacaoDiv.appendChild(programacaoList);
-            habilidadesContainer.appendChild(programacaoDiv);
-
-            // Create tools section
-            const ferramentasDiv = document.createElement('div');
-            ferramentasDiv.classList.add('habilidades__ferramentas');
-
-            const ferramentasTitle = document.createElement('h3');
-            ferramentasTitle.classList.add('habilidades__subtitulo');
-            ferramentasTitle.textContent = 'Ferramentas';
-            ferramentasDiv.appendChild(ferramentasTitle);
-
-            const ferramentasList = document.createElement('ul');
-            ferramentasList.classList.add('habilidades__lista');
-
-            ferramentas.forEach(ferramenta => {
-                const listItem = document.createElement('li');
-                listItem.classList.add('habilidades__item');
-
-                const imagem = document.createElement('img');
-                imagem.src = ferramenta.imagem;
-                imagem.alt = ferramenta.nome;
-                imagem.classList.add('habilidades__imagem');
-                listItem.appendChild(imagem);
-
-                const nome = document.createElement('span');
-                nome.classList.add('habilidades__nome');
-                nome.textContent = ferramenta.nome;
-                listItem.appendChild(nome);
-
-                ferramentasList.appendChild(listItem);
-            });
-
-            ferramentasDiv.appendChild(ferramentasList);
-            habilidadesContainer.appendChild(ferramentasDiv);
-
-            // Create languages section
+            // Create languages section (remains specific)
             const idiomasDiv = document.createElement('div');
             idiomasDiv.classList.add('habilidades__idiomas');
 

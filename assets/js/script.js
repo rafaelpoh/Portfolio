@@ -1,3 +1,4 @@
+"use strict";
 import { carregarHabilidades } from './habilidades.js';
 import { getProjects } from './projetos.js';
 import { getCursos } from './cursos.js';
@@ -29,12 +30,12 @@ document.addEventListener('DOMContentLoaded', function () {
             const canvasImg = new Image();
             const profileImg = document.querySelector('.apresentacao__imagem');
 
-            fetch('assets/data/projetos.json')
+            fetch('assets/data/sobre.json')
                 .then(response => response.json())
                 .then(data => {
-                    canvasImg.src = data.sobre.foto; // Use foto from projetos.json for canvas
+                    canvasImg.src = data.sobre.foto; // Use foto from sobre.json for canvas
                     if (profileImg) {
-                        profileImg.src = data.sobre.foto2; // Use foto2 from projetos.json for the <img> tag
+                        profileImg.src = data.sobre.foto2; // Use foto2 from sobre.json for the <img> tag
                     }
 
                     canvasImg.onload = () => {
@@ -44,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         });
                     };
                 })
-                .catch(error => console.error('Error loading projetos.json:', error));
+                .catch(error => console.error('Error loading sobre.json:', error));
 
             container.addEventListener('mouseleave', () => {
                 ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -99,37 +100,40 @@ document.addEventListener('DOMContentLoaded', function () {
 
 export function initCarousel(carouselSelector) {
     const carousel = document.querySelector(carouselSelector);
-    if (carousel) {
-        const track = carousel.querySelector('.carousel__track');
-        const items = Array.from(track.children);
-        const nextButton = carousel.querySelector('.carousel__button--right');
-        const prevButton = carousel.querySelector('.carousel__button--left');
-
-        let currentIndex = 0;
-
-        const updateCarousel = () => {
-            items.forEach((item, index) => {
-                if (index === currentIndex) {
-                    item.classList.add('active');
-                } else {
-                    item.classList.remove('active');
-                } 
-            });
-
-        };
-
-        nextButton.addEventListener('click', () => {
-            currentIndex = (currentIndex + 1) % items.length;
-            updateCarousel();
-        });
-
-        prevButton.addEventListener('click', () => {
-            currentIndex = (currentIndex - 1 + items.length) % items.length;
-            updateCarousel();
-        });
-
-        updateCarousel();
+    if (!carousel) {
+        return;
     }
+
+    const track = carousel.querySelector('.carousel__track');
+    if (!track) {
+        return;
+    }
+
+    const items = Array.from(track.children);
+    if (items.length === 0) {
+        return;
+    }
+
+    const nextButton = carousel.querySelector('.carousel__button--right');
+    const prevButton = carousel.querySelector('.carousel__button--left');
+    let currentIndex = 0;
+
+    const updateCarousel = () => {
+        items.forEach(item => item.classList.remove('active'));
+        items[currentIndex].classList.add('active');
+    };
+
+    nextButton.addEventListener('click', () => {
+        currentIndex = (currentIndex + 1) % items.length;
+        updateCarousel();
+    });
+
+    prevButton.addEventListener('click', () => {
+        currentIndex = (currentIndex - 1 + items.length) % items.length;
+        updateCarousel();
+    });
+
+    updateCarousel();
 }
 
 const toggleTheme = document.getElementById("switch");
