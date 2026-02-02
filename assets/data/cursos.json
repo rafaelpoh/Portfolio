@@ -2,33 +2,39 @@
   "cursos": [
     {
       "titulo": "Curso Superior de Tecnologia em Análise e Desenvolvimento de sistemas",
-      "imagem": "assets/img/diploma.WebP",
-      "descricao": "Curso superior de tecnologia focado em análise e desenvolvimento de sistemas, preparando profissionais para atuar no mercado de TI com habilidades em programação, banco de dados e gestão de projetos.",
+      "imagem": "./assets/certificados/diploma.WebP",
+      "descricao": "Graduação tecnológica focada no ciclo completo de vida do software. A formação consolidou minha base em engenharia de software, modelagem de dados e gestão de projetos, permitindo-me atuar não apenas na codificação, mas na análise estratégica de soluções tecnológicas. Durante o curso, desenvolvi a capacidade de transformar requisitos de negócio em sistemas funcionais e escaláveis.",
       "certificado": "./assets/pdfs/RAFAEL_PERRONI_CSTADS.pdf"
     },
     {
       "titulo": "HTML, CSS e JavaScript",
-      "imagem": "assets/img/DVWBRP14HT28111080.WebP",
-      "descricao": "Modulo referente a HTML, CSS e JavaScript do curso Desenvolvimento Web Full Stack.",
+      "imagem": "./assets/certificados/DVWBRP14HT28111080.WebP",
+      "descricao": "Módulo focado na tríade fundamental do desenvolvimento web. Aprofundei-me na estruturação semântica e acessível com HTML5, na criação de layouts responsivos e modernos utilizando CSS3 (incluindo Flexbox e Grid), e na implementação de interatividade dinâmica através da manipulação do DOM com JavaScript. Esta etapa consolidou a base necessária para a construção de interfaces web robustas e escaláveis.",
       "certificado": "https://programadorbr.com/certificado/DVWBRP14HT28111080"
     },
     {
+      "titulo": "Blip - Lógica de Programação",
+      "imagem": "./assets/certificados/blip.WebP",
+      "descricao": "Bootcamp para aprimoramento da lógica de programação da DIO em parceria com a Blip, onde consolidei os fundamentos essenciais do desenvolvimento de software. Durante a jornada, foquei na construção de algoritmos robustos utilizando JavaScript, além de aplicar na prática conceitos de versionamento de código com Git e GitHub. Essa experiência foi fundamental para estruturar meu raciocínio computacional, servindo como alicerce para meus projetos atuais em Front-end e React.",
+      "certificado": "./assets/pdfs/blip.pdf"
+    },
+    {
       "titulo": "Bootcamp Santader - Front-End",
-      "imagem": "assets/img/dio_santander_front-end.WebP",
-      "descricao": "Bootcamp Santander - Front-End oferecido pela Digital Innovation One, focado em desenvolvimento web front-end utilizando HTML, CSS e JavaScript para criar interfaces de usuário responsivas e interativas, com diversos projetos desenvolvidos e mentorias.",
+      "imagem": "./assets/certificados/dio_santander_front-end.WebP",
+      "descricao": "Programa intensivo de especialização promovido pelo Santander. Focado na realidade do mercado de tecnologia, o bootcamp proporcionou uma imersão no desenvolvimento Front-end moderno. Através de mentorias com especialistas e desafios práticos, aprimorei a criação de interfaces responsivas e de alta performance, aplicando boas práticas de HTML5, CSS3 e JavaScript em cenários que simulam demandas reais de grandes empresas.",
       "certificado": "./assets/pdfs/Santander_Front-End.pdf"
     },
     {
-      "titulo": "Github Copilot",
-      "imagem": "assets/img/Github_Copilot.WebP",
-      "descricao": "Bootcamp sobre o Github Copilot, uma ferramenta de inteligência artificial desenvolvida pela GitHub em parceria com a OpenAI, que auxilia desenvolvedores na escrita de código, oferecendo sugestões e completando trechos de código automaticamente para aumentar a produtividade e eficiência no desenvolvimento de software.",
-      "certificado": "./assets/pdfs/Github_Copilot.pdf"
+      "titulo": "Universia Fundamentos de IA Generativa",
+      "imagem": "./assets/certificados/dio_universia_fundamentos_de_IA.WebP",
+      "descricao": "Imersão nos fundamentos e aplicações da Inteligência Artificial Generativa. O programa foi além da teoria, focando na Engenharia de Prompt e na utilização estratégica de LLMs (Large Language Models) para criação de conteúdo e resolução de problemas. Através de projetos práticos e mentorias, desenvolvi a capacidade de integrar ferramentas de IA em fluxos de trabalho reais para maximizar a eficiência e a inovação.",
+      "certificado": "./assets/pdfs/Universia_Fundamentos_de_IA.pdf"
     },
     {
-      "titulo": "Universia Fundamentos de IA Generativa",
-      "imagem": "assets/img/dio_universia_fundamentos_de_IA.WebP",
-      "descricao": "Bootcamp para introduzir conhecimentos sobre Inteligência Artificial Generativa, abordando conceitos fundamentais, aplicações práticas e ferramentas utilizadas na área, com foco em capacitar os participantes para entender e utilizar IA generativa em diversos contextos, com alguns projetos e mentorias.",
-      "certificado": "./assets/pdfs/Universia_Fundamentos_de_IA.pdf"
+      "titulo": "Github Copilot",
+      "imagem": "./assets/certificados/Github_Copilot.WebP",
+      "descricao": "Bootcamp focado na integração de IA Generativa ao fluxo de trabalho de desenvolvimento (DevOps). Aprendi a aplicar técnicas avançadas de Engenharia de Prompt para orientar o GitHub Copilot na geração de snippets de código, documentação técnica e tradução de lógica de negócios para sintaxe de programação. O curso consolidou minha habilidade de utilizar ferramentas de IA para resolver problemas complexos com maior agilidade.",
+      "certificado": "./assets/pdfs/Github_Copilot.pdf"
     }
   ]
 }
