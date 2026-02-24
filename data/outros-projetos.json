@@ -1,0 +1,18 @@
+{
+  "contribuicoes_e_estudos": [
+    {
+      "imagem": "assets/img/yugioh.WebP",
+      "titulo": "Yu-Gi-Oh! Game Logic",
+      "descricao": "Neste projeto de estudo dirigido, foquei na expansão da lógica de estados e regras de negócio. Implementei um sistema de gerenciamento de turnos para partidas de 5 rodadas e desenvolvi mecanismos customizados de vitória/derrota, aprimorando a estrutura original com funções de validação mais robustas.",
+      "pagina": "https://rafaelpoh.github.io/js-yugioh-assets/",
+      "github": "https://github.com/rafaelpoh/js-yugioh-assets"
+    },
+    {
+      "imagem": "assets/img/pokedex.WebP",
+      "titulo": "Pokedex Engine",
+      "descricao": "Estudo de integração avançada com a PokéAPI. Trabalhei na refatoração da interface de usuário (UI) e na implementação de uma tela de detalhes dinâmica, otimizando o fluxo de dados e a paginação dos elementos consumidos via requisições assíncronas.",
+      "pagina": "https://rafaelpoh.github.io/js-developer-pokedex/",
+      "github": "https://github.com/rafaelpoh/js-developer-pokedex"
+    }
+  ]
+}

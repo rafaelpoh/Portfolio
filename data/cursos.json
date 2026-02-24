@@ -10,7 +10,7 @@
       "titulo": "HTML, CSS e JavaScript",
       "imagem": "./assets/certificados/DVWBRP14HT28111080.WebP",
       "descricao": "Módulo focado na tríade fundamental do desenvolvimento web. Aprofundei-me na estruturação semântica e acessível com HTML5, na criação de layouts responsivos e modernos utilizando CSS3 (incluindo Flexbox e Grid), e na implementação de interatividade dinâmica através da manipulação do DOM com JavaScript. Esta etapa consolidou a base necessária para a construção de interfaces web robustas e escaláveis.",
-      "certificado": "https://programadorbr.com/certificado/DVWBRP14HT28111080"
+      "certificado": "./assets/pdfs/HTML-CSS-JavaScript.pdf"
     },
     {
       "titulo": "Blip - Lógica de Programação",

@@ -1,23 +1,24 @@
 "use strict";
-import { initCarousel } from './script.js';
+import { initCarousel } from './main.js';
 
-export async function getProjects() {
+export async function getOutrosProjetos() {
     try {
-        const response = await fetch('assets/data/projetos.json');
+        const response = await fetch('data/outros-projetos.json');
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         const projects = await response.json();
         
-        const carouselTrack = document.querySelector('.projetos .carousel__track');
+        const carouselTrack = document.querySelector('#outros-projetos .carousel__track');
         if (!carouselTrack) {
+            console.log('Carousel track for outros-projetos not found');
             return;
         }
 
         carouselTrack.innerHTML = '';
 
         let projectsHTML = '';
-        projects.projetos.forEach(project => {
+        projects['contribuicoes_e_estudos'].forEach(project => {
             projectsHTML += `
                 <div class="projeto__card carousel__item">
                   <img
@@ -50,8 +51,8 @@ export async function getProjects() {
 
         carouselTrack.innerHTML = projectsHTML;
 
-        initCarousel('.projetos .carousel');
+        initCarousel('#outros-projetos .carousel');
     } catch (error) {
-        console.error('Error fetching or processing projects:', error);
+        console.error('Error fetching or processing outros-projetos:', error);
     }
 }

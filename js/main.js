@@ -2,6 +2,7 @@
 import { carregarHabilidades } from './habilidades.js';
 import { getProjects } from './projetos.js';
 import { getCursos } from './cursos.js';
+import { getOutrosProjetos } from './outros-projetos.js';
 
 document.addEventListener('DOMContentLoaded', function () {
     const menu = document.getElementById('menu-lateral');
@@ -30,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const canvasImg = new Image();
             const profileImg = document.querySelector('.apresentacao__imagem');
 
-            fetch('assets/data/sobre.json')
+            fetch('data/sobre.json')
                 .then(response => response.json())
                 .then(data => {
                     canvasImg.src = data.sobre.foto; // Use foto from sobre.json for canvas
@@ -76,6 +77,11 @@ document.addEventListener('DOMContentLoaded', function () {
                     // Ensure the carouselTrack exists before calling getCursos
                     if (document.querySelector('.cursos .carousel__track')) {
                         getCursos();
+                    }
+                } else if (url === 'outros-projetos.html') {
+                    // Ensure the carouselTrack exists before calling getOutrosProjetos
+                    if (document.querySelector('#outros-projetos .carousel__track')) {
+                        getOutrosProjetos();
                     }
                 }
             });

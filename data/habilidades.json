@@ -12,6 +12,14 @@
       {
         "nome": "JavaScript",
         "imagem": "assets/icons/js.png"
+      },
+      {
+        "nome": "SQL",
+        "imagem": "assets/icons/sql.png"
+      },
+      {
+        "nome": "C++",
+        "imagem": "assets/icons/cpp.png"
       }
     ],
     "ferramentas": [
@@ -26,6 +34,18 @@
       {
         "nome": "GitHub",
         "imagem": "assets/icons/github.png"
+      },
+      {
+        "nome": "Figma",
+        "imagem": "assets/icons/figma.png"
+      },
+      {
+        "nome": "Postman",
+        "imagem": "assets/icons/postman.png"
+      },
+      {
+        "nome": "Vercel",
+        "imagem": "assets/icons/vercel.png"
       }
     ],
     "idiomas": [

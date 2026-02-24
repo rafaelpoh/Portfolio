@@ -1,0 +1,67 @@
+{
+  "projetos": [
+    {
+      "imagem": "assets/img/CO2calculadora.WebP",
+      "titulo": "CO2calculadora",
+      "descricao": "Calculadora de impacto ambiental que transforma dados estáticos em precisão geográfica. Tomei a iniciativa de integrar uma API de rotas para calcular emissões baseadas em distâncias reais, demonstrando autonomia na busca de soluções técnicas fora do briefing original.",
+      "pagina": "https://rafaelpoh.github.io/CO2calculadora/",
+      "github": "https://github.com/rafaelpoh/CO2calculadora"
+    },
+    {
+      "imagem": "assets/img/serielist.WebP",
+      "titulo": "SerieList",
+      "descricao": "Plataforma de exploração de catálogo que consome a API TMDb para renderização dinâmica de dados. Implementei sistemas de busca em tempo real e visualização de trailers via modais, focando em uma arquitetura de componentes reutilizáveis com JavaScript Vanilla.",
+      "pagina": "https://rafaelpoh.github.io/serielist/",
+      "github": "https://github.com/rafaelpoh/serielist"
+    },
+    {
+      "imagem": "assets/img/criptohunter.WebP",
+      "titulo": "CriptoHunter",
+      "descricao": "Dashboard de monitoramento de ativos financeiros integrado à CoinGecko API. A aplicação processa variações percentuais para destacar os 'Top Gainers' e 'Top Losers' do mercado, exigindo manipulação avançada de arrays e lógica de filtragem de dados.",
+      "pagina": "https://rafaelpoh.github.io/CriptoHunter",
+      "github": "https://github.com/rafaelpoh/CriptoHunter"
+    },
+    {
+      "imagem": "assets/img/movielist.WebP",
+      "titulo": "MovieList",
+      "descricao": "Aplicação focada em integridade de dados para combater a desinformação em trailers de filmes. Utiliza consumo estratégico de API para garantir conteúdos oficiais, priorizando uma experiência de usuário confiável e uma navegação fluida.",
+      "pagina": "https://rafaelpoh.github.io/movielist",
+      "github": "https://github.com/rafaelpoh/movielist"
+    },
+    {
+      "imagem": "assets/img/quadro-de-ideias.WebP",
+      "titulo": "Quadros de Ideias",
+      "descricao": "Ecossistema de produtividade 100% autoral. Desenvolvi ferramentas interativas de desenho e gerenciamento de tarefas usando JavaScript puro, priorizando alta performance e baixo consumo de recursos em dispositivos limitados.",
+      "pagina": "https://rafaelpoh.github.io/Quadro-de-ideias",
+      "github": "https://github.com/rafaelpoh/Quadro-de-ideias"
+    },
+    {
+      "imagem": "assets/img/JPerroni.WebP",
+      "titulo": "JPerroni",
+      "descricao": "Landing Page institucional para empresa familiar, desenvolvida com foco em performance e SEO. O projeto serve como base para um futuro sistema de orçamentos automatizados, aplicando conceitos de design responsivo e arquitetura limpa.",
+      "pagina": "https://jperroni.com.br",
+      "github": "https://github.com/rafaelpoh/Jperroni"
+    },
+    {
+      "imagem": "assets/img/mega-sorte.WebP",
+      "titulo": "Mega-Sorte",
+      "descricao": "Simulador de probabilidades desenvolvido para aplicar estruturas complexas de repetição, condicionais e funções. Um projeto recorrente em minha jornada para validar o domínio da lógica fundamental em novas linguagens de programação.",
+      "pagina": "https://rafaelpoh.github.io/mega-sorte",
+      "github": "https://github.com/rafaelpoh/mega-sorte"
+    },
+    {
+      "imagem": "assets/img/churras.WebP",
+      "titulo": "Churrascometro",
+      "descricao": "Ferramenta de cálculo de suprimentos com lógica baseada em variáveis de tempo e perfil de consumo. O sistema processa entradas dinâmicas para gerar previsões precisas de insumos, demonstrando aplicação prática de funções matemáticas em JavaScript.",
+      "pagina": "https://rafaelpoh.github.io/Churrascometro/",
+      "github": "https://github.com/rafaelpoh/Churrascometro"
+    },
+    {
+      "imagem": "assets/img/jogo-da-veia.WebP",
+      "titulo": "Jogo da velha",
+      "descricao": "Implementação clássica focada em lógica de estados e validação de matrizes. Desenvolvido com foco em responsividade total, garantindo uma experiência consistente em qualquer resolução ou dispositivo.",
+      "pagina": "https://rafaelpoh.github.io/jogo-da-veia/",
+      "github": "https://github.com/rafaelpoh/jogo-da-veia"
+    }
+  ]
+}

@@ -1,9 +1,9 @@
 "use strict";
-import { initCarousel } from './script.js';
+import { initCarousel } from './main.js';
 
 export async function getCursos() {
     try {
-        const response = await fetch('assets/data/cursos.json');
+        const response = await fetch('data/cursos.json');
         if (!response.ok) {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
