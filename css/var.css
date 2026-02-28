@@ -1,3 +1,25 @@
 :root {
-    /* Defina suas variáveis de cor, fontes e espaçamento aqui */
+  --texto: snow;
+  --fundo: linear-gradient(180deg, #363636 0%, #36494f);
+  --fundonav: linear-gradient(180deg, #003108 0%, #00551c);
+  --borda: #28cb4f;
+  --fonte-principal: "Poppins", sans-serif;
+  --textoforte: #28cb4f;
+  --cor-hover: #1e3028;
+  --seta: #e1f5e6;
+  --fundo-botao: #28cb4f;
+  --texto-botao: #003108;
+}
+
+:root[data-theme="Claro"] {
+  --texto: #0c3765;
+  --fundo: linear-gradient(180deg, #c0cbe6, #bfcddf);
+  --fundonav: linear-gradient(to bottom right, #bdc3d3, #a4afbe);
+  --borda: #058db6;
+  --fonte-principal: "Poppins", sans-serif;
+  --textoforte: #240f59;
+  --cor-hover: #7ddcff;
+  --seta: #240f59;
+  --fundo-botao: #058db6;
+  --texto-botao: #c0cbe6;
 }

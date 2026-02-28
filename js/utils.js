@@ -125,3 +125,25 @@ export const debounce = (func, wait = 100) => {
 export const generateId = () => {
   return "_" + Math.random().toString(36).substr(2, 9);
 };
+
+/* ==========================================================================
+   DATA FETCHING
+   ========================================================================== */
+
+/**
+ * Busca dados de um arquivo JSON.
+ * @param {string} url - O caminho para o arquivo JSON.
+ * @returns {Promise<Object>} - Uma promessa que resolve com os dados do JSON.
+ */
+export const fetchData = async (url) => {
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+    return await response.json();
+  } catch (error) {
+    console.error(`Error fetching data from ${url}:`, error);
+    throw error;
+  }
+};

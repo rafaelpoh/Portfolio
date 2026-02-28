@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br" data-theme="Escuro">
   <head>
     <meta charset="UTF-8" />
@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/var.css" />
     <link rel="stylesheet" href="css/skin.css" />
-    <link rel="stylesheet" href="css/cursos.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -31,18 +31,18 @@
         <i class="bi bi-list"></i>
       </button>
       <nav class="header__menu" id="menu-lateral">
-        <a class="header__menu__link" href="sobre.html">
-        <i class="bi bi-person-bounding-box"></i> Sobre</a>
-        <a class="header__menu__link" href="cursos.html">
-        <i class="bi bi-mortarboard-fill"></i> Cursos/Bootcamps</a>
-        <a class="header__menu__link" href="habilidades.html">
-        <i class="bi bi-gear-wide-connected"></i> Habilidades</a>
-        <a class="header__menu__link" href="projetos.html">
-        <i class="bi bi-archive-fill"></i> Projetos</a>
-        <a class="header__menu__link" href="outros-projetos.html">
-        <i class="bi bi-lightbulb"></i> Outros Projetos</a>
-        <a class="header__menu__link" href="contato.html">
-        <i class="bi bi-wechat"></i> Contato</a>
+        <a class="header__menu__link" href="#/sobre">
+          <i class="bi bi-person-bounding-box"></i> Sobre</a>
+        <a class="header__menu__link" href="#/cursos">
+          <i class="bi bi-mortarboard-fill"></i> Cursos/Bootcamps</a>
+        <a class="header__menu__link" href="#/habilidades">
+          <i class="bi bi-gear-wide-connected"></i> Habilidades</a>
+        <a class="header__menu__link" href="#/projetos">
+          <i class="bi bi-archive-fill"></i> Projetos</a>
+        <a class="header__menu__link" href="#/outros-projetos">
+          <i class="bi bi-lightbulb"></i> Outros Projetos</a>
+        <a class="header__menu__link" href="#/contato">
+          <i class="bi bi-wechat"></i> Contato</a>
       </nav>
     </header>
     <div class="icone-seta" id="switch">
@@ -52,13 +52,34 @@
     <main id="conteudo-dinamico_container"></main>
     <a class="icone-seta" href="#topo"><i class="bi bi-arrow-up"></i></a>
     <footer class="rodape">
-      <p>Desenvolvido por <strong class="destaque">Rafael Perroni</strong></p>
+      <div class="rodape__links">
+        <a
+          href="https://www.linkedin.com/in/rafaelperroni"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contato__link"
+          >LinkedIn<i class="bi bi-linkedin"></i>
+        </a>
+        <a
+          href="https://github.com/rafaelpoh"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contato__link"
+          >GitHub<i class="bi bi-github"></i
+        ></a>
+        <a href="mailto:rafaelperroni89@gmail.com" class="contato__link"
+          >Email<i class="bi bi-envelope-at-fill"></i
+        ></a>
+        <a
+          href="./assets/pdfs/Rafael_Perroni.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="contato__link"
+          >Curriculo<i class="bi bi-file-person-fill"></i
+        ></a>
+      </div>
     </footer>
 
     <script type="module" src="js/main.js"></script>
-    <script type="module" src="js/habilidades.js"></script>
-    <script type="module" src="js/projetos.js"></script>
-    <script type="module" src="js/cursos.js"></script>
-    <script type="module" src="js/outros-projetos.js"></script>
   </body>
 </html>

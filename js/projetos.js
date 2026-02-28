@@ -1,57 +1,87 @@
 "use strict";
-import { initCarousel } from './main.js';
+import { fetchData, createElement } from "./utils.js";
 
-export async function getProjects() {
-    try {
-        const response = await fetch('data/projetos.json');
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        const projects = await response.json();
-        
-        const carouselTrack = document.querySelector('.projetos .carousel__track');
-        if (!carouselTrack) {
-            return;
-        }
+function createProjectCard(project) {
+  const img = createElement("img", {
+    class: "imagem-projeto",
+    src: project.imagem,
+    alt: project.titulo,
+  });
+  const title = createElement("h3");
+  const strong = createElement("strong", { class: "destaque" }, project.titulo);
+  title.appendChild(strong);
+  const description = createElement("p", {}, project.descricao);
+  const pageLink = createElement(
+    "a",
+    {
+      href: project.pagina,
+      target: "_blank",
+      rel: "noopener noreferrer",
+      class: "projeto__link",
+    },
+    "Ver Pagina ",
+  );
+  const pageIcon = createElement("i", { class: "bi bi-globe2" });
+  pageLink.appendChild(pageIcon);
+  const githubLink = createElement(
+    "a",
+    {
+      href: project.github,
+      target: "_blank",
+      rel: "noopener noreferrer",
+      class: "projeto__link",
+    },
+    "Ver Projeto ",
+  );
+  const githubIcon = createElement("i", { class: "bi bi-github" });
+  githubLink.appendChild(githubIcon);
+  const linksContainer = createElement("div", { class: "projeto__links" });
+  linksContainer.append(pageLink, githubLink);
+  const card = createElement("div", { class: "projeto__card carousel__item" });
+  card.append(img, title, description, linksContainer);
+  return card;
+}
 
-        carouselTrack.innerHTML = '';
+function createCarousel() {
+  const track = createElement("div", { class: "carousel__track" });
+  const trackContainer = createElement("div", {
+    class: "carousel__track-container",
+  });
+  trackContainer.appendChild(track);
 
-        let projectsHTML = '';
-        projects.projetos.forEach(project => {
-            projectsHTML += `
-                <div class="projeto__card carousel__item">
-                  <img
-                    class="imagem-projeto"
-                    src="${project.imagem}"
-                    alt="${project.titulo}"
-                  />
-                  <h3><strong class="destaque">${project.titulo}</strong></h3>
-                  <p>
-                    ${project.descricao}
-                  </p>
-                  <div class="projeto__links">
-                    <a
-                      href="${project.pagina}"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="projeto__link"
-                      >Ver Pagina <i class="bi bi-globe2"></i></a>
-                    <a
-                      href="${project.github}"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="projeto__link"
-                      >Ver Projeto <i class="bi bi-github"></i>
-                    </a>
-                  </div>
-                </div>
-            `;
-        });
+  const prevButton = createElement("button", {
+    class: "carousel__button carousel__button--left",
+  });
+  prevButton.innerHTML = '<i class="bi bi-chevron-left"></i>';
+  const nextButton = createElement("button", {
+    class: "carousel__button carousel__button--right",
+  });
+  nextButton.innerHTML = '<i class="bi bi-chevron-right"></i>';
 
-        carouselTrack.innerHTML = projectsHTML;
+  const carousel = createElement("div", { class: "carousel" });
+  carousel.append(trackContainer, prevButton, nextButton);
 
-        initCarousel('.projetos .carousel');
-    } catch (error) {
-        console.error('Error fetching or processing projects:', error);
-    }
+  return { carousel, track };
+}
+
+export async function loadProjetos(container) {
+  const data = await fetchData("data/projetos.json");
+  const projects = data.projetos;
+
+  const { carousel, track } = createCarousel();
+
+  projects.forEach((project) => {
+    const card = createProjectCard(project);
+    track.appendChild(card);
+  });
+
+  const title = createElement("h2", { class: "projetos__titulo" }, "Projetos");
+  const description = createElement(
+    "p",
+    { class: "projetos__descricao" },
+    "Aplicações desenvolvidas integralmente por mim, do planejamento à implementação do código, focando em soluções de problemas e lógica própria.",
+  );
+
+  container.textContent = "";
+  container.append(title, description, carousel);
 }

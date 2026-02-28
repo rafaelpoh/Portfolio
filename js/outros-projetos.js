@@ -1,58 +1,91 @@
 "use strict";
-import { initCarousel } from './main.js';
+import { fetchData, createElement } from "./utils.js";
 
-export async function getOutrosProjetos() {
-    try {
-        const response = await fetch('data/outros-projetos.json');
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        const projects = await response.json();
-        
-        const carouselTrack = document.querySelector('#outros-projetos .carousel__track');
-        if (!carouselTrack) {
-            console.log('Carousel track for outros-projetos not found');
-            return;
-        }
+function createOutroProjetoCard(project) {
+  const img = createElement("img", {
+    class: "imagem-projeto",
+    src: project.imagem,
+    alt: project.titulo,
+  });
+  const title = createElement("h3");
+  const strong = createElement("strong", { class: "destaque" }, project.titulo);
+  title.appendChild(strong);
+  const description = createElement("p", {}, project.descricao);
+  const pageLink = createElement(
+    "a",
+    {
+      href: project.pagina,
+      target: "_blank",
+      rel: "noopener noreferrer",
+      class: "projeto__link",
+    },
+    "Ver Pagina ",
+  );
+  const pageIcon = createElement("i", { class: "bi bi-globe2" });
+  pageLink.appendChild(pageIcon);
+  const githubLink = createElement(
+    "a",
+    {
+      href: project.github,
+      target: "_blank",
+      rel: "noopener noreferrer",
+      class: "projeto__link",
+    },
+    "Ver Projeto ",
+  );
+  const githubIcon = createElement("i", { class: "bi bi-github" });
+  githubLink.appendChild(githubIcon);
+  const linksContainer = createElement("div", { class: "projeto__links" });
+  linksContainer.append(pageLink, githubLink);
+  const card = createElement("div", { class: "projeto__card carousel__item" });
+  card.append(img, title, description, linksContainer);
+  return card;
+}
 
-        carouselTrack.innerHTML = '';
+function createCarousel() {
+  const track = createElement("div", { class: "carousel__track" });
+  const trackContainer = createElement("div", {
+    class: "carousel__track-container",
+  });
+  trackContainer.appendChild(track);
 
-        let projectsHTML = '';
-        projects['contribuicoes_e_estudos'].forEach(project => {
-            projectsHTML += `
-                <div class="projeto__card carousel__item">
-                  <img
-                    class="imagem-projeto"
-                    src="${project.imagem}"
-                    alt="${project.titulo}"
-                  />
-                  <h3><strong class="destaque">${project.titulo}</strong></h3>
-                  <p>
-                    ${project.descricao}
-                  </p>
-                  <div class="projeto__links">
-                    <a
-                      href="${project.pagina}"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="projeto__link"
-                      >Ver Pagina <i class="bi bi-globe2"></i></a>
-                    <a
-                      href="${project.github}"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      class="projeto__link"
-                      >Ver Projeto <i class="bi bi-github"></i>
-                    </a>
-                  </div>
-                </div>
-            `;
-        });
+  const prevButton = createElement("button", {
+    class: "carousel__button carousel__button--left",
+  });
+  prevButton.innerHTML = '<i class="bi bi-chevron-left"></i>';
+  const nextButton = createElement("button", {
+    class: "carousel__button carousel__button--right",
+  });
+  nextButton.innerHTML = '<i class="bi bi-chevron-right"></i>';
 
-        carouselTrack.innerHTML = projectsHTML;
+  const carousel = createElement("div", { class: "carousel" });
+  carousel.append(trackContainer, prevButton, nextButton);
 
-        initCarousel('#outros-projetos .carousel');
-    } catch (error) {
-        console.error('Error fetching or processing outros-projetos:', error);
-    }
+  return { carousel, track };
+}
+
+export async function loadOutrosProjetos(container) {
+  const data = await fetchData("data/outros-projetos.json");
+  const projects = data["contribuicoes_e_estudos"];
+
+  const { carousel, track } = createCarousel();
+
+  projects.forEach((project) => {
+    const card = createOutroProjetoCard(project);
+    track.appendChild(card);
+  });
+
+  const title = createElement(
+    "h2",
+    { class: "projetos__titulo" },
+    "Outros Projetos",
+  );
+  const description = createElement(
+    "p",
+    { class: "projetos__descricao" },
+    "Implementações baseadas em orientações de mentores, onde foquei em refinar funcionalidades específicas e adaptar layouts sobre bases já existentes.",
+  );
+
+  container.textContent = "";
+  container.append(title, description, carousel);
 }
