@@ -1,7 +1,7 @@
 {
   "projetos": [
     {
-      "imagem": "assets/img/Agente-financeiro.WebP",
+      "imagem": "assets/img/agente-financeiro.WebP",
       "titulo": "Agente Financeiro com IA",
       "descricao": "Aplicação full-stack que utiliza a API do Google Gemini para gerenciar finanças via linguagem natural, automatizando o registro de gastos e a geração de insights. Desenvolvido com JavaScript Vanilla, Node.js (Serverless) e MongoDB, o projeto foca em alta performance e na aplicação prática de IA Generativa para transformar a experiência do usuário na gestão de dados financeiros.",
       "pagina": "https://financas-three-chi.vercel.app",
