@@ -1,8 +1,15 @@
 {
   "projetos": [
     {
+      "imagem": "assets/img/Agente-financeiro.WebP",
+      "titulo": "Agente Financeiro com IA",
+      "descricao": "Aplicação full-stack que utiliza a API do Google Gemini para gerenciar finanças via linguagem natural, automatizando o registro de gastos e a geração de insights. Desenvolvido com JavaScript Vanilla, Node.js (Serverless) e MongoDB, o projeto foca em alta performance e na aplicação prática de IA Generativa para transformar a experiência do usuário na gestão de dados financeiros.",
+      "pagina": "https://financas-three-chi.vercel.app",
+      "github": "https://github.com/rafaelpoh/dio-lab-vibe-coding-app-financas"
+    },
+    {
       "imagem": "assets/img/CO2calculadora.WebP",
-      "titulo": "CO2calculadora",
+      "titulo": "Calculadora de Impacto Ambiental",
       "descricao": "Calculadora de impacto ambiental que transforma dados estáticos em precisão geográfica. Tomei a iniciativa de integrar uma API de rotas para calcular emissões baseadas em distâncias reais, demonstrando autonomia na busca de soluções técnicas fora do briefing original.",
       "pagina": "https://rafaelpoh.github.io/CO2calculadora/",
       "github": "https://github.com/rafaelpoh/CO2calculadora"
