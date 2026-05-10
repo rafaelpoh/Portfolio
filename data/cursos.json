@@ -9,7 +9,7 @@
     {
       "titulo": "Bootcamp CAIXA - IA Generativa com Microsoft Copilot",
       "imagem": "./assets/certificados/caixa.WebP",
-      "descricao": "Capacitação focada na integração de IA Generativa em soluções de finanças e produtividade. Durante o bootcamp, desenvolvi:\n\n*   **Soluções Inteligentes:** Criação de um app de organização financeira e um mentor de carreira para simulação de entrevistas técnicas.\n*   **Engenharia de Prompts:** Aplicação de técnicas avançadas de prompt para automação de processos e criação de conteúdo.\n*   **IA e Finanças:** Exploração de ferramentas do Microsoft Copilot para análise de dados financeiros e estratégias de empreendedorismo digital.",
+      "descricao": "Formação focada em aplicar IA e engenharia de prompts em finanças, empreendedorismo e carreira, em parceria com a CAIXA. Desenvolvi soluções práticas como um app de organização financeira inteligente, simuladores de entrevistas e mentores de carreira personalizados. O projeto destaca a integração de tecnologias como Microsoft Copilot para otimizar o cotidiano e criar produtos digitais inovadores.",
       "certificado": "./assets/pdfs/caixa.pdf"
     },
     {
