@@ -1,10 +1,22 @@
 {
   "cursos": [
     {
-      "titulo": "Curso Superior de Tecnologia em Análise e Desenvolvimento de sistemas",
+      "titulo": "Curso Superior de Tecnologia em Análise e Desenvolvimento de Sistemas",
       "imagem": "./assets/certificados/diploma.WebP",
       "descricao": "Graduação tecnológica focada no ciclo completo de vida do software. A formação consolidou minha base em engenharia de software, modelagem de dados e gestão de projetos, permitindo-me atuar não apenas na codificação, mas na análise estratégica de soluções tecnológicas. Durante o curso, desenvolvi a capacidade de transformar requisitos de negócio em sistemas funcionais e escaláveis.",
       "certificado": "./assets/pdfs/RAFAEL_PERRONI_CSTADS.pdf"
+    },
+    {
+      "titulo": "Bootcamp CAIXA - IA Generativa com Microsoft Copilot",
+      "imagem": "./assets/certificados/caixa.WebP",
+      "descricao": "Capacitação focada na integração de IA Generativa em soluções de finanças e produtividade. Durante o bootcamp, desenvolvi:\n\n*   **Soluções Inteligentes:** Criação de um app de organização financeira e um mentor de carreira para simulação de entrevistas técnicas.\n*   **Engenharia de Prompts:** Aplicação de técnicas avançadas de prompt para automação de processos e criação de conteúdo.\n*   **IA e Finanças:** Exploração de ferramentas do Microsoft Copilot para análise de dados financeiros e estratégias de empreendedorismo digital.",
+      "certificado": "./assets/pdfs/caixa.pdf"
+    },
+    {
+      "titulo": "IA Generativa e Agentes: Do Prompting à Construção de Copilotos",
+      "imagem": "./assets/certificados/lupo.WebP",
+      "descricao": "Finalizei o Bootcamp de Inteligência Artificial com foco em produtividade e automação, dominando desde fundamentos de LLMs até a criação de Agentes. Como projeto final, desenvolvi um consultor inteligente de livros que utiliza técnicas avançadas de prompting e organização de conhecimento para realizar buscas personalizadas. Essa formação consolidou minha capacidade de integrar IA Generativa em fluxos reais, transformando tecnologia em soluções práticas e competitivas.",
+      "certificado": "./assets/pdfs/lupo.pdf"
     },
     {
       "titulo": "HTML, CSS e JavaScript",
@@ -19,19 +31,19 @@
       "certificado": "./assets/pdfs/blip.pdf"
     },
     {
-      "titulo": "Bootcamp Santader - Front-End",
+      "titulo": "Bootcamp Santander - Front-End",
       "imagem": "./assets/certificados/dio_santander_front-end.WebP",
       "descricao": "Programa intensivo de especialização promovido pelo Santander. Focado na realidade do mercado de tecnologia, o bootcamp proporcionou uma imersão no desenvolvimento Front-end moderno. Através de mentorias com especialistas e desafios práticos, aprimorei a criação de interfaces responsivas e de alta performance, aplicando boas práticas de HTML5, CSS3 e JavaScript em cenários que simulam demandas reais de grandes empresas.",
       "certificado": "./assets/pdfs/Santander_Front-End.pdf"
     },
     {
-      "titulo": "Universia Fundamentos de IA Generativa",
+      "titulo": "Universia - Fundamentos de IA Generativa",
       "imagem": "./assets/certificados/dio_universia_fundamentos_de_IA.WebP",
       "descricao": "Imersão nos fundamentos e aplicações da Inteligência Artificial Generativa. O programa foi além da teoria, focando na Engenharia de Prompt e na utilização estratégica de LLMs (Large Language Models) para criação de conteúdo e resolução de problemas. Através de projetos práticos e mentorias, desenvolvi a capacidade de integrar ferramentas de IA em fluxos de trabalho reais para maximizar a eficiência e a inovação.",
       "certificado": "./assets/pdfs/Universia_Fundamentos_de_IA.pdf"
     },
     {
-      "titulo": "Github Copilot",
+      "titulo": "GitHub Copilot",
       "imagem": "./assets/certificados/Github_Copilot.WebP",
       "descricao": "Bootcamp focado na integração de IA Generativa ao fluxo de trabalho de desenvolvimento (DevOps). Aprendi a aplicar técnicas avançadas de Engenharia de Prompt para orientar o GitHub Copilot na geração de snippets de código, documentação técnica e tradução de lógica de negócios para sintaxe de programação. O curso consolidou minha habilidade de utilizar ferramentas de IA para resolver problemas complexos com maior agilidade.",
       "certificado": "./assets/pdfs/Github_Copilot.pdf"

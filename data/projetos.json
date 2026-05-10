@@ -37,7 +37,7 @@
     },
     {
       "imagem": "assets/img/quadro-de-ideias.WebP",
-      "titulo": "Quadros de Ideias",
+      "titulo": "Quadro de Ideias",
       "descricao": "Ecossistema de produtividade 100% autoral. Desenvolvi ferramentas interativas de desenho e gerenciamento de tarefas usando JavaScript puro, priorizando alta performance e baixo consumo de recursos em dispositivos limitados.",
       "pagina": "https://rafaelpoh.github.io/Quadro-de-ideias",
       "github": "https://github.com/rafaelpoh/Quadro-de-ideias"
@@ -58,15 +58,15 @@
     },
     {
       "imagem": "assets/img/churras.WebP",
-      "titulo": "Churrascometro",
+      "titulo": "Churrascômetro",
       "descricao": "Ferramenta de cálculo de suprimentos com lógica baseada em variáveis de tempo e perfil de consumo. O sistema processa entradas dinâmicas para gerar previsões precisas de insumos, demonstrando aplicação prática de funções matemáticas em JavaScript.",
       "pagina": "https://rafaelpoh.github.io/Churrascometro/",
       "github": "https://github.com/rafaelpoh/Churrascometro"
     },
     {
       "imagem": "assets/img/jogo-da-veia.WebP",
-      "titulo": "Jogo da velha",
-      "descricao": "Implementação clássica focada em lógica de estados e validação de matrizes. Desenvolvido com foco em responsividade total, garantindo uma experiência consistente em qualquer resolução ou dispositivo.",
+      "titulo": "Jogo da Velha",
+      "descricao": "Implementação clássica focada em lógica de estados e validação de matrizes. Desenvolvida com foco em responsividade total, garantindo uma experiência consistente em qualquer resolução ou dispositivo.",
       "pagina": "https://rafaelpoh.github.io/jogo-da-veia/",
       "github": "https://github.com/rafaelpoh/jogo-da-veia"
     }

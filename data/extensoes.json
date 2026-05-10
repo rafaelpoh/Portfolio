@@ -3,13 +3,13 @@
     {
       "imagem": "assets/img/banner-anotai.WebP",
       "titulo": "Anotai",
-      "descricao": "Desenvolvida com JavaScript vanilla, HTML e CSS, esta extensão para Google Chrome simplifica a criação e o gerenciamento de notas rápidas com foco total em inclusão e usabilidade. A ferramenta oferece recursos avançados de acessibilidade, permitindo a personalização do tamanho da fonte e suporte nativo a uma tipografia específica para pessoas com dislexia, garantindo uma leitura confortável, eficiente e uma experiência de navegação otimizada para todos os perfis de usuários.",
+      "descricao": "Desenvolvida com JavaScript Vanilla, HTML e CSS, esta extensão para Google Chrome simplifica a criação e o gerenciamento de notas rápidas com foco total em inclusão e usabilidade. A ferramenta oferece recursos avançados de acessibilidade, permitindo a personalização do tamanho da fonte e suporte nativo a uma tipografia específica para pessoas com dislexia, garantindo uma leitura confortável, eficiente e uma experiência de navegação otimizada para todos os perfis de usuários.",
       "link": "https://chromewebstore.google.com/detail/nmgkaochnoccdaffdajbocdhemjcilgb?utm_source=item-share-cb"
     },
     {
       "imagem": "assets/img/banner-promptbox.WebP",
       "titulo": "PromptBox — Gerenciador de Prompts",
-      "descricao": "O Promptbox é um repositório pessoal de prompts para IA direto no navegador, projetado para organizar e recuperar comandos do ChatGPT, Claude e Midjourney com apenas um clique. Desenvolvida inteiramente em JavaScript Vanilla, HTML e CSS, a extensão oferece busca instantânea, sincronização em nuvem via Supabase com segurança RLS e um sistema de pastas para máxima produtividade, entregando uma ferramenta ultra-leve de apenas 509KB com performance nativa e zero dependências de frameworks.",
+      "descricao": "O PromptBox é um repositório pessoal de prompts para IA direto no navegador, projetado para organizar e recuperar comandos do ChatGPT, Claude e Midjourney com apenas um clique. Desenvolvida inteiramente em JavaScript Vanilla, HTML e CSS, a extensão oferece busca instantânea, sincronização em nuvem via Supabase com segurança RLS e um sistema de pastas para máxima produtividade, entregando uma ferramenta ultra-leve de apenas 509KB com performance nativa e zero dependências de frameworks.",
       "link": "https://chromewebstore.google.com/detail/promptbox/bckjlaiingnenhplbgckkppkbhkkajph?authuser=0&hl=pt-BR"
     }
   ]

@@ -24,7 +24,7 @@
     ],
     "ferramentas": [
       {
-        "nome": "VScode",
+        "nome": "VS Code",
         "imagem": "assets/icons/vscode.png"
       },
       {
@@ -50,12 +50,12 @@
     ],
     "idiomas": [
       {
-        "nome": "Portugues",
+        "nome": "Português",
         "nivel": "Nativo"
       },
       {
         "nome": "Inglês",
-        "nivel": "Intermediario/Avançado"
+        "nivel": "Intermediário/Avançado"
       },
       {
         "nome": "Espanhol",
