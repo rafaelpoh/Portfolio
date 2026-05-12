@@ -1,6 +1,13 @@
 {
   "projetos": [
     {
+      "imagem": "assets/img/streamerpage.WebP",
+      "titulo": "StreamerHub",
+      "descricao": "StreamerHub é um ecossistema white-label em JavaScript Vanilla e CSS3 que centraliza lives e cursos em uma interface proprietária. O projeto soluciona a dispersão de audiência com um sistema de temas dinâmico via CSS Variables e integração com a YouTube API. Com foco em performance e manipulação de DOM, entrega uma experiência imersiva com chat simulado e navegação SPA para máxima retenção do usuário.",
+      "pagina": "https://rafaelpoh.github.io/streamerpage/",
+      "github": "https://github.com/rafaelpoh/streamerpage"
+    },
+    {
       "imagem": "assets/img/agente-financeiro.WebP",
       "titulo": "Agente Financeiro com IA",
       "descricao": "Aplicação full-stack que utiliza a API do Google Gemini para gerenciar finanças via linguagem natural, automatizando o registro de gastos e a geração de insights. Desenvolvido com JavaScript Vanilla, Node.js (Serverless) e MongoDB, o projeto foca em alta performance e na aplicação prática de IA Generativa para transformar a experiência do usuário na gestão de dados financeiros.",
