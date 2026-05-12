@@ -3,7 +3,7 @@
     {
       "imagem": "assets/img/streamerpage.WebP",
       "titulo": "StreamerHub",
-      "descricao": "StreamerHub é um ecossistema white-label em JavaScript Vanilla e CSS3 que centraliza lives e cursos em uma interface proprietária. O projeto soluciona a dispersão de audiência com um sistema de temas dinâmico via CSS Variables e integração com a YouTube API. Com foco em performance e manipulação de DOM, entrega uma experiência imersiva com chat simulado e navegação SPA para máxima retenção do usuário.",
+      "descricao": "O StreamerHub é uma Single Page Application (SPA) "White Label" focada em criadores de conteúdo, desenvolvida exclusivamente com Vanilla JS, HTML5 e CSS3. Seu principal diferencial é a navegação dinâmica de alta performance, que permite transitar entre seções enquanto mantém um player de vídeo persistente. A arquitetura modular garante segurança e velocidade, utilizando manipulação eficiente do DOM nativo e event delegation. A interface responsiva e imersiva inclui recursos interativos, como um chat ao vivo simulado e galerias otimizadas. É uma solução altamente customizável e de design premium, projetada para maximizar o engajamento do público.",
       "pagina": "https://rafaelpoh.github.io/streamerpage/",
       "github": "https://github.com/rafaelpoh/streamerpage"
     },
