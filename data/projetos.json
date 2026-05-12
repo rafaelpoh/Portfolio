@@ -3,7 +3,7 @@
     {
       "imagem": "assets/img/streamerpage.WebP",
       "titulo": "StreamerHub",
-      "descricao": "O StreamerHub é uma Single Page Application (SPA) "White Label" focada em criadores de conteúdo, desenvolvida exclusivamente com Vanilla JS, HTML5 e CSS3. Seu principal diferencial é a navegação dinâmica de alta performance, que permite transitar entre seções enquanto mantém um player de vídeo persistente. A arquitetura modular garante segurança e velocidade, utilizando manipulação eficiente do DOM nativo e event delegation. A interface responsiva e imersiva inclui recursos interativos, como um chat ao vivo simulado e galerias otimizadas. É uma solução altamente customizável e de design premium, projetada para maximizar o engajamento do público.",
+      "descricao": "O StreamerHub é uma Single Page Application (SPA) \"White Label\" focada em criadores de conteúdo, desenvolvida exclusivamente com Vanilla JS, HTML5 e CSS3. Seu principal diferencial é a navegação dinâmica de alta performance, que permite transitar entre seções enquanto mantém um player de vídeo persistente. A arquitetura modular garante segurança e velocidade, utilizando manipulação eficiente do DOM nativo e event delegation. A interface responsiva e imersiva inclui recursos interativos, como um chat ao vivo simulado e galerias otimizadas. É uma solução altamente customizável e de design premium, projetada para maximizar o engajamento do público.",
       "pagina": "https://rafaelpoh.github.io/streamerpage/",
       "github": "https://github.com/rafaelpoh/streamerpage"
     },
