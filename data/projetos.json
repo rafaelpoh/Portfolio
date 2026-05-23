@@ -15,6 +15,20 @@
       "github": "https://github.com/rafaelpoh/dio-lab-vibe-coding-app-financas"
     },
     {
+      "imagem": "assets/img/sucoflesh.WebP",
+      "titulo": "Sucoflesh, landing page de suco de laranja",
+      "descricao": "O Sucoflesh é uma landing page interativa e responsiva para a venda de suco de laranja 100% natural. Desenvolvido com foco em performance e acessibilidade, utiliza exclusivamente tecnologias web nativas (HTML5, CSS3 e JavaScript Vanilla), sem frameworks externos. Apresenta design Mobile-first, animações baseadas no scroll e segue rigorosos padrões de segurança (prevenção XSS) e otimização, garantindo uma experiência digital rápida, sustentável e visualmente envolvente.",
+      "pagina": "https://rafaelpoh.github.io/Sucoflesh/",
+      "github": "https://github.com/rafaelpoh/Sucoflesh"
+    },
+    {
+      "imagem": "assets/img/receitasdavo.WebP",
+      "titulo": "Receitas da Vó",
+      "descricao": "O Receitas da Vó é um livro de receitas digital minimalista com estética editorial ('modo revista'), desenvolvido inteiramente com Vanilla JS, HTML5 e CSS3. Criado para oferecer uma experiência de usuário limpa e livre de distrações, o projeto destaca-se pela integração da IA do Google Gemini via funções Serverless (Vercel), permitindo importar e estruturar receitas automaticamente a partir de qualquer link. A arquitetura dispensa dependências externas pesadas e otimiza recursos usando a API nativa do HTML5 Canvas para compressão de imagens no lado do cliente, salvando-as em Base64 diretamente no Cloud Firestore. Uma solução full-stack escalável, ágil e focada em performance, comprovando o poder do desenvolvimento web nativo.",
+      "pagina": "https://receitasdavo-one.vercel.app",
+      "github": "https://github.com/rafaelpoh/Receitasdavo"
+    },
+    {
       "imagem": "assets/img/CO2calculadora.WebP",
       "titulo": "Calculadora de Impacto Ambiental",
       "descricao": "Calculadora de impacto ambiental que transforma dados estáticos em precisão geográfica. Tomei a iniciativa de integrar uma API de rotas para calcular emissões baseadas em distâncias reais, demonstrando autonomia na busca de soluções técnicas fora do briefing original.",
