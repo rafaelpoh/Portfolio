@@ -1,5 +1,5 @@
 "use strict";
-import { fetchData, createElement } from "./utils.js";
+import { fetchData, createElement, createCarousel } from "./utils.js";
 
 function createExtensionCard(extension) {
   const img = createElement("img", {
@@ -32,27 +32,7 @@ function createExtensionCard(extension) {
   return card;
 }
 
-function createCarousel() {
-  const track = createElement("div", { class: "carousel__track" });
-  const trackContainer = createElement("div", {
-    class: "carousel__track-container",
-  });
-  trackContainer.appendChild(track);
 
-  const prevButton = createElement("button", {
-    class: "carousel__button carousel__button--left",
-  });
-  prevButton.innerHTML = '<i class="bi bi-chevron-left"></i>';
-  const nextButton = createElement("button", {
-    class: "carousel__button carousel__button--right",
-  });
-  nextButton.innerHTML = '<i class="bi bi-chevron-right"></i>';
-
-  const carousel = createElement("div", { class: "carousel" });
-  carousel.append(trackContainer, prevButton, nextButton);
-
-  return { carousel, track };
-}
 
 export async function loadExtensoes(container) {
   const data = await fetchData("data/extensoes.json");

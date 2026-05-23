@@ -147,3 +147,30 @@ export const fetchData = async (url) => {
     throw error;
   }
 };
+
+/* ==========================================================================
+   UI COMPONENTS
+   ========================================================================== */
+
+/**
+ * Cria a estrutura base de um carrossel.
+ * @returns {Object} Objeto contendo o elemento carousel e o track.
+ */
+export const createCarousel = () => {
+  const track = createElement("div", { class: "carousel__track" });
+  const trackContainer = createElement("div", { class: "carousel__track-container" });
+  trackContainer.appendChild(track);
+
+  const prevButton = createElement("button", { class: "carousel__button carousel__button--left" });
+  const prevIcon = createElement("i", { class: "bi bi-chevron-left" });
+  prevButton.appendChild(prevIcon);
+
+  const nextButton = createElement("button", { class: "carousel__button carousel__button--right" });
+  const nextIcon = createElement("i", { class: "bi bi-chevron-right" });
+  nextButton.appendChild(nextIcon);
+
+  const carousel = createElement("div", { class: "carousel" });
+  carousel.append(trackContainer, prevButton, nextButton);
+
+  return { carousel, track };
+};

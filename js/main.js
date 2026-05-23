@@ -60,8 +60,8 @@ export function initCarousel(carouselSelector) {
     let currentIndex = 0;
 
     function moveToSlide(index) {
-        const itemWidth = items[0].offsetWidth;
-        track.style.transform = 'translateX(-' + itemWidth * index + 'px)';
+        const itemWidth = items[0].getBoundingClientRect().width;
+        track.style.transform = `translateX(-${itemWidth * index}px)`;
     }
 
     function handleNext() {
