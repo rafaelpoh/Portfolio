@@ -1,6 +1,13 @@
 {
   "projetos": [
     {
+      "imagem": "assets/img/GymTracker.WebP",
+      "titulo": "GymTracker",
+      "descricao": "O GymTracker é uma aplicação web mobile-first para registro e acompanhamento de evolução de cargas em treinos de musculação. Com design escuro e premium em estilo neon, oferece autenticação segura via Firebase, um dashboard com gráficos de progressão (Chart.js), registro completo de exercícios com peso, séries e repetições, histórico filtrável e edição livre dos registros. Todo o frontend é construído em HTML5, CSS3 Vanilla e JavaScript ES6+ modular, sem frameworks, priorizando segurança contra XSS e performance. Os dados são armazenados e sincronizados em tempo real na nuvem via Firebase Firestore, garantindo acesso ao histórico de qualquer dispositivo.",
+      "pagina": "https://rafaelpoh.github.io/GymTracker/",
+      "github": "https://github.com/rafaelpoh/GymTracker"
+    },
+    {
       "imagem": "assets/img/streamerpage.WebP",
       "titulo": "StreamerHub",
       "descricao": "O StreamerHub é uma Single Page Application (SPA) \"White Label\" focada em criadores de conteúdo, desenvolvida exclusivamente com Vanilla JS, HTML5 e CSS3. Seu principal diferencial é a navegação dinâmica de alta performance, que permite transitar entre seções enquanto mantém um player de vídeo persistente. A arquitetura modular garante segurança e velocidade, utilizando manipulação eficiente do DOM nativo e event delegation. A interface responsiva e imersiva inclui recursos interativos, como um chat ao vivo simulado e galerias otimizadas. É uma solução altamente customizável e de design premium, projetada para maximizar o engajamento do público.",
