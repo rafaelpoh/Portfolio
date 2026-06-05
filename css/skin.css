@@ -194,6 +194,7 @@ body {
 
 .destaque {
   color: var(--textoforte);
+  font-weight: 600;
 }
 
 .contato-container {
