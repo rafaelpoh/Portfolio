@@ -1,6 +1,13 @@
 {
   "projetos": [
     {
+      "imagem": "assets/img/Viajante.WebP",
+      "titulo": "Viajante - Roteirista de Viagens",
+      "descricao": "O Viajante é um planejador inteligente de itinerários de viagem que utiliza inteligência artificial (Google Gemini) para gerar roteiros dinâmicos e personalizados. Construído com JavaScript Vanilla, HTML5 e CSS modular, o projeto consome APIs de clima (OpenWeatherMap) e dados geográficos (REST Countries) para enriquecer a experiência. Conta com autenticação de usuários e persistência do histórico no Firebase (Auth/Firestore), além de uma arquitetura serverless segura na Vercel para proteger chaves e chamadas de API no backend.",
+      "pagina": "https://viajante-six.vercel.app",
+      "github": "https://github.com/rafaelpoh/Viajante"
+    },
+    {
       "imagem": "assets/img/GymTracker.WebP",
       "titulo": "GymTracker",
       "descricao": "O GymTracker é uma aplicação web mobile-first para registro e acompanhamento de evolução de cargas em treinos de musculação. Com design escuro e premium em estilo neon, oferece autenticação segura via Firebase, um dashboard com gráficos de progressão (Chart.js), registro completo de exercícios com peso, séries e repetições, histórico filtrável e edição livre dos registros. Todo o frontend é construído em HTML5, CSS3 Vanilla e JavaScript ES6+ modular, sem frameworks, priorizando segurança contra XSS e performance. Os dados são armazenados e sincronizados em tempo real na nuvem via Firebase Firestore, garantindo acesso ao histórico de qualquer dispositivo.",
