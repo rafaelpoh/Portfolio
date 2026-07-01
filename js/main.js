@@ -45,46 +45,58 @@ function setupThemeSwitcher() {
     toggleTheme.addEventListener("click", trocaTema);
 }
 
-export function initCarousel(carouselSelector) {
-    const carousel = document.querySelector(carouselSelector);
-    if (!carousel) return;
+export function initAllCarousels() {
+    const carousels = document.querySelectorAll('.carousel');
+    carousels.forEach(carousel => {
+        const track = carousel.querySelector('.carousel__track');
+        if (!track) return;
 
-    const track = carousel.querySelector('.carousel__track');
-    if (!track) return;
+        const items = Array.from(track.children);
+        if (items.length === 0) return;
 
-    const items = Array.from(track.children);
-    if (items.length === 0) return;
+        const nextButton = carousel.querySelector('.carousel__button--right');
+        const prevButton = carousel.querySelector('.carousel__button--left');
+        let currentIndex = 0;
 
-    const nextButton = carousel.querySelector('.carousel__button--right');
-    const prevButton = carousel.querySelector('.carousel__button--left');
-    let currentIndex = 0;
+        function moveToSlide(index) {
+            const itemWidth = items[0].getBoundingClientRect().width;
+            if (itemWidth > 0) {
+                track.style.transform = `translateX(-${itemWidth * index}px)`;
+            }
+        }
 
-    function moveToSlide(index) {
-        const itemWidth = items[0].getBoundingClientRect().width;
-        track.style.transform = `translateX(-${itemWidth * index}px)`;
-    }
+        function handleNext() {
+            currentIndex = (currentIndex + 1) % items.length;
+            moveToSlide(currentIndex);
+        }
 
-    function handleNext() {
-        currentIndex = (currentIndex + 1) % items.length;
+        function handlePrev() {
+            currentIndex = (currentIndex - 1 + items.length) % items.length;
+            moveToSlide(currentIndex);
+        }
+
+        nextButton.addEventListener('click', handleNext);
+        prevButton.addEventListener('click', handlePrev);
+
+        // Armazena a função de atualizar posição para ser chamada quando a página ficar visível
+        carousel.__updatePosition = () => {
+            moveToSlide(currentIndex);
+        };
+
+        window.addEventListener('resize', () => {
+            if (carousel.getBoundingClientRect().width > 0) {
+                moveToSlide(currentIndex);
+            }
+        });
+
         moveToSlide(currentIndex);
-    }
-
-    function handlePrev() {
-        currentIndex = (currentIndex - 1 + items.length) % items.length;
-        moveToSlide(currentIndex);
-    }
-
-    nextButton.addEventListener('click', handleNext);
-    prevButton.addEventListener('click', handlePrev);
-
-    moveToSlide(currentIndex);
-
-    window.addEventListener('resize', () => moveToSlide(currentIndex));
+    });
 }
 
 document.addEventListener('DOMContentLoaded', () => {
     setupMenu();
     setupThemeSwitcher();
+    initAllCarousels();
     window.addEventListener('popstate', handleLocation);
     handleLocation();
 });

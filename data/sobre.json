@@ -2,6 +2,12 @@
   "sobre": {
     "nome": "Rafael Perroni",
     "foto": "assets/icons/fotoperfil.WebP",
-    "foto2": "assets/icons/fotoperfil2.WebP"
+    "foto2": "assets/icons/fotoperfil2.WebP",
+    "paragrafos": [
+      "Um <strong class=\"destaque\">Desenvolvedor Front-End</strong> que une o rigor da lógica estruturada à eficiência das interfaces modernas.",
+      "Minha trajetória na tecnologia é marcada por uma base de engenharia profunda. Antes de focar na experiência do usuário, consolidei meu raciocínio lógico e a resolução de problemas complexos através de linguagens de baixo nível como <strong class=\"destaque\">C e C++</strong>. Essa bagagem me permite entender exatamente o que acontece por trás dos panos de uma aplicação, resultando em um código nativo (<strong class=\"destaque\">JavaScript, HTML5 e CSS3</strong>) muito mais sólido, semântico e performático.",
+      "Graduado em <strong class=\"destaque\">Análise e Desenvolvimento de Sistemas (ADS)</strong> e com histórico prático no <strong class=\"destaque\">Banco do Brasil</strong> manipulando bancos de dados relacionais (SQL) e relatórios, desenvolvi uma visão analítica sobre a organização e o fluxo de dados. Hoje, aplico essa disciplina na construção de layouts responsivos, modulares e pautados em <strong class=\"destaque\">Acessibilidade Web (WCAG)</strong>, enquanto expando continuamente meus horizontes com o estudo e aprimoramento ativo no ecossistema <strong class=\"destaque\">React e TypeScript</strong>.",
+      "Além disso, sou um entusiasta de <strong class=\"destaque\">Inteligência Artificial</strong>, integrando ferramentas inteligentes para otimizar meu fluxo de desenvolvimento e elevar a precisão das minhas entregas. Sou movido por desafios arquiteturais e pela evolução técnica constante. Vamos construir algo incrível juntos?"
+    ]
   }
 }

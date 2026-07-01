@@ -480,3 +480,30 @@ body {
     right: -50px;
   }
 }
+
+/* ==========================================================================
+   ROTEAMENTO E VISIBILIDADE DAS PÁGINAS (PRE-RENDER)
+   ========================================================================== */
+
+/* Se o JS estiver ativo, oculta todas as páginas exceto a selecionada */
+body.js-enabled .pagina-secao {
+  display: none !important;
+}
+
+body.js-enabled .pagina-secao.active {
+  display: block !important;
+}
+
+/* Se o JS estiver inativo (bots, crawlers, acessibilidade), exibe todas as
+   páginas sequencialmente com separadores visuais elegantes */
+body:not(.js-enabled) .pagina-secao {
+  display: block !important;
+  margin-bottom: 4rem;
+  border-bottom: 2px dashed var(--borda);
+  padding-bottom: 4rem;
+}
+
+body:not(.js-enabled) .pagina-secao:last-of-type {
+  border-bottom: none;
+}
+

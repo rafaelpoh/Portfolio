@@ -1,0 +1,12 @@
+{
+  "name": "rafaelperroni-portfolio",
+  "version": "1.0.0",
+  "description": "Portfólio de Rafael Perroni com pré-renderização para SEO e IAs",
+  "main": "compile.js",
+  "scripts": {
+    "build": "node compile.js",
+    "compile": "node compile.js"
+  },
+  "author": "Rafael Perroni",
+  "license": "ISC"
+}

@@ -1,48 +1,45 @@
 "use strict";
 
-import { qs } from "./utils.js";
-import { loadCursos } from "./cursos.js";
-import { loadHabilidades } from "./habilidades.js";
-import { loadProjetos } from "./projetos.js";
-import { loadOutrosProjetos } from "./outros-projetos.js";
-import { loadSobre } from "./sobre.js";
-import { loadContato } from "./contato.js";
-import { loadExtensoes } from "./extensoes.js";
-import { initCarousel } from "./main.js";
-
-const contentContainer = qs("#conteudo-dinamico_container");
+import { initSobre } from "./sobre.js";
 
 const routes = {
-  "/": loadSobre,
-  "/sobre": loadSobre,
-  "/cursos": loadCursos,
-  "/habilidades": loadHabilidades,
-  "/projetos": loadProjetos,
-  "/outros-projetos": loadOutrosProjetos,
-  "/extensoes": loadExtensoes,
-  "/contato": loadContato,
+  "/": "sobre-page",
+  "/sobre": "sobre-page",
+  "/cursos": "cursos-page",
+  "/habilidades": "habilidades-page",
+  "/projetos": "projetos-page",
+  "/outros-projetos": "outros-projetos-page",
+  "/extensoes": "extensoes-page",
+  "/contato": "contato-page",
 };
 
-const pathRequiresCarousel = (path) => {
-  return ['/cursos', '/projetos', '/outros-projetos', '/extensoes'].includes(path);
-};
-
-const loadPage = async (loader, path) => {
-  contentContainer.textContent = '';
-  await loader(contentContainer);
-
-  if (pathRequiresCarousel(path)) {
-    initCarousel('.carousel');
-  }
-};
-
-export const handleLocation = async () => {
+export const handleLocation = () => {
   const path = window.location.hash.substring(1) || "/";
-  const loader = routes[path] || routes["/"];
-  await loadPage(loader, path);
+  const activePageId = routes[path] || routes["/"];
+
+  const pages = document.querySelectorAll('.pagina-secao');
+  pages.forEach(page => {
+    if (page.id === activePageId) {
+      page.classList.add('active');
+    } else {
+      page.classList.remove('active');
+    }
+  });
+
+  // Inicializa componentes do 'Sobre' se aplicável (canvas de perfil, etc.)
+  if (activePageId === "sobre-page") {
+    initSobre();
+  }
+
+  // Alinha a translação do carrossel quando a página correspondente fica visível
+  const visibleCarousel = document.querySelector(`#${activePageId} .carousel`);
+  if (visibleCarousel && typeof visibleCarousel.__updatePosition === 'function') {
+    visibleCarousel.__updatePosition();
+  }
 };
 
 export const onNavigate = (path) => {
   window.history.pushState({}, path, window.location.origin + window.location.pathname + path);
   handleLocation();
 };
+
