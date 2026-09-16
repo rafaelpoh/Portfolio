@@ -1,0 +1,152 @@
+/* ==========================================================================
+   DESIGN TOKENS - PORTFÓLIO RAFAEL PERRONI (reactspecs & Impeccable)
+   Regra: Sem valores mágicos ou hexadecimais dispersos nos CSS Modules.
+   ========================================================================== */
+
+:root {
+  /* Tipografia */
+  --font-family-base: "Poppins", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-family-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace;
+
+  --font-size-xs: 0.75rem;     /* 12px */
+  --font-size-sm: 0.875rem;    /* 14px */
+  --font-size-base: 1rem;      /* 16px */
+  --font-size-md: 1.125rem;    /* 18px */
+  --font-size-lg: 1.25rem;     /* 20px */
+  --font-size-xl: 1.5rem;      /* 24px */
+  --font-size-2xl: 1.875rem;   /* 30px */
+  --font-size-3xl: 2.25rem;    /* 36px */
+  --font-size-4xl: 3rem;       /* 48px */
+
+  --font-weight-normal: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  --line-height-tight: 1.2;
+  --line-height-snug: 1.375;
+  --line-height-normal: 1.5;
+  --line-height-relaxed: 1.625;
+
+  /* Espaçamentos Modulares */
+  --space-2xs: 0.25rem;  /* 4px */
+  --space-xs: 0.5rem;    /* 8px */
+  --space-sm: 0.75rem;   /* 12px */
+  --space-md: 1rem;      /* 16px */
+  --space-lg: 1.5rem;    /* 24px */
+  --space-xl: 2rem;      /* 32px */
+  --space-2xl: 3rem;     /* 48px */
+  --space-3xl: 4rem;     /* 64px */
+
+  /* Raios de Borda */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-full: 9999px;
+
+  /* Transições e Curvas Suaves */
+  --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Breakpoints Semânticos (Mobile-First) */
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1024px;
+  --breakpoint-xl: 1280px;
+
+  /* Z-Index Hierarchy */
+  --z-base: 1;
+  --z-card: 10;
+  --z-sticky: 100;
+  --z-header: 1000;
+  --z-modal: 2000;
+  --z-tooltip: 3000;
+
+  /* ========================================================================
+     PALETA PADRÃO: TEMA ESCURO (Dark Tech High-Craft)
+     ======================================================================== */
+  --color-bg-base: #0d1217;
+  --color-bg-gradient: linear-gradient(180deg, #0e141a 0%, #131d24 100%);
+  --color-bg-surface: rgba(22, 31, 40, 0.75);
+  --color-bg-surface-solid: #162029;
+  --color-bg-card: rgba(26, 38, 48, 0.65);
+  --color-bg-card-hover: rgba(33, 49, 63, 0.85);
+  --color-bg-interactive: #213240;
+  --color-bg-interactive-hover: #2a4154;
+
+  --color-nav-bg: rgba(14, 20, 26, 0.85);
+  --color-nav-border: rgba(40, 203, 79, 0.25);
+
+  --color-border-subtle: rgba(255, 255, 255, 0.08);
+  --color-border-medium: rgba(255, 255, 255, 0.15);
+  --color-border-accent: rgba(40, 203, 79, 0.45);
+
+  --color-brand-primary: #28cb4f;
+  --color-brand-primary-hover: #34e05e;
+  --color-brand-glow: rgba(40, 203, 79, 0.25);
+  --color-brand-text: #003108;
+
+  --color-accent: #00f0ff;
+  --color-accent-glow: rgba(0, 240, 255, 0.2);
+
+  --color-text-primary: #f8fafc;
+  --color-text-secondary: #94a3b8;
+  --color-text-muted: #64748b;
+  --color-text-accent: #28cb4f;
+
+  --color-badge-bg: rgba(40, 203, 79, 0.12);
+  --color-badge-text: #4ade80;
+  --color-badge-border: rgba(40, 203, 79, 0.3);
+
+  --shadow-subtle: 0 4px 12px rgba(0, 0, 0, 0.3);
+  --shadow-card: 0 8px 24px rgba(0, 0, 0, 0.45);
+  --shadow-elevated: 0 16px 36px rgba(0, 0, 0, 0.6), 0 0 20px var(--color-brand-glow);
+  --shadow-glow: 0 0 24px var(--color-brand-glow);
+
+  --glass-blur: blur(12px);
+}
+
+/* ==========================================================================
+   PALETA ALTERNATIVA: TEMA CLARO (Cerulean Porcelain High-Contrast)
+   ========================================================================== */
+:root[data-theme="Claro"] {
+  --color-bg-base: #f1f5f9;
+  --color-bg-gradient: linear-gradient(180deg, #f8fafc 0%, #e2e8f0 100%);
+  --color-bg-surface: rgba(255, 255, 255, 0.82);
+  --color-bg-surface-solid: #ffffff;
+  --color-bg-card: rgba(255, 255, 255, 0.9);
+  --color-bg-card-hover: #ffffff;
+  --color-bg-interactive: #e2e8f0;
+  --color-bg-interactive-hover: #cbd5e1;
+
+  --color-nav-bg: rgba(248, 250, 252, 0.88);
+  --color-nav-border: rgba(5, 141, 182, 0.25);
+
+  --color-border-subtle: rgba(15, 23, 42, 0.08);
+  --color-border-medium: rgba(15, 23, 42, 0.16);
+  --color-border-accent: rgba(5, 141, 182, 0.4);
+
+  --color-brand-primary: #058db6;
+  --color-brand-primary-hover: #0369a1;
+  --color-brand-glow: rgba(5, 141, 182, 0.2);
+  --color-brand-text: #ffffff;
+
+  --color-accent: #0284c7;
+  --color-accent-glow: rgba(2, 132, 199, 0.2);
+
+  --color-text-primary: #0f172a;
+  --color-text-secondary: #334155;
+  --color-text-muted: #64748b;
+  --color-text-accent: #058db6;
+
+  --color-badge-bg: rgba(5, 141, 182, 0.1);
+  --color-badge-text: #0369a1;
+  --color-badge-border: rgba(5, 141, 182, 0.3);
+
+  --shadow-subtle: 0 4px 12px rgba(15, 23, 42, 0.06);
+  --shadow-card: 0 8px 24px rgba(15, 23, 42, 0.1);
+  --shadow-elevated: 0 16px 36px rgba(15, 23, 42, 0.15), 0 0 20px var(--color-brand-glow);
+  --shadow-glow: 0 0 20px var(--color-brand-glow);
+}

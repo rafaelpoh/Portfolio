@@ -1,0 +1,43 @@
+.imageContainer {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  aspect-ratio: 1 / 1;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-elevated);
+  border: 2px solid var(--color-border-accent);
+  cursor: pointer;
+  user-select: none;
+  background-color: var(--color-bg-surface-solid);
+}
+
+.profileImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity var(--transition-normal);
+  pointer-events: none;
+}
+
+.canvasActive {
+  opacity: 1;
+}
+
+.glowRing {
+  position: absolute;
+  inset: 0;
+  border-radius: var(--radius-xl);
+  box-shadow: inset 0 0 20px var(--color-brand-glow);
+  pointer-events: none;
+}

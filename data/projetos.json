@@ -24,7 +24,7 @@
     {
       "imagem": "assets/img/agente-financeiro.WebP",
       "titulo": "Agente Financeiro com IA",
-      "descricao": "Aplicação full-stack que utiliza a API do Google Gemini para gerenciar finanças via linguagem natural, automatizando o registro de gastos e a geração de insights. Desenvolvido com JavaScript Vanilla, Node.js (Serverless) e MongoDB, o projeto foca em alta performance e na aplicação prática de IA Generativa para transformar a experiência do usuário na gestão de dados financeiros.",
+      "descricao": "Controle financeiro inteligente que substitui formulários exaustivos por um agente conversacional integrado ao Google Gemini. O usuário registra gastos, ganhos e aportes via chat e acompanha métricas em tempo real em um dashboard limpo e responsivo. Desenvolvido com React 18 e TypeScript, adota gráficos em CSS3 nativo para máxima velocidade, validação Zero Trust com Zod, autenticação com Firebase Auth e banco de dados NoSQL no Cloud Firestore com rotas serverless na Vercel.",
       "pagina": "https://financas-three-chi.vercel.app",
       "github": "https://github.com/rafaelpoh/dio-lab-vibe-coding-app-financas"
     },

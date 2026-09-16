@@ -1,0 +1,103 @@
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 860px;
+  margin: 0 auto;
+  outline: none;
+  padding: 0 var(--space-xl);
+}
+
+.trackContainer {
+  overflow: hidden;
+  width: 100%;
+  border-radius: var(--radius-lg);
+}
+
+.track {
+  display: flex;
+  transition: transform var(--transition-smooth);
+  width: 100%;
+}
+
+.slide {
+  flex: 0 0 100%;
+  width: 100%;
+  padding: var(--space-xs);
+  box-sizing: border-box;
+}
+
+/* Botões de Navegação */
+.navButton {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: var(--space-2xl);
+  height: var(--space-2xl);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-bg-surface-solid);
+  color: var(--color-brand-primary);
+  border: 1px solid var(--color-border-medium);
+  border-radius: var(--radius-full);
+  box-shadow: var(--shadow-card);
+  cursor: pointer;
+  z-index: var(--z-card);
+  transition: background-color var(--transition-fast), transform var(--transition-fast), border-color var(--transition-fast), color var(--transition-fast);
+}
+
+.navButton:hover {
+  background-color: var(--color-brand-primary);
+  color: var(--color-brand-text);
+  border-color: var(--color-brand-primary);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.prevButton {
+  left: 0;
+}
+
+.nextButton {
+  right: 0;
+}
+
+/* Indicadores de Slide */
+.indicators {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-xs);
+  margin-top: var(--space-md);
+}
+
+.indicatorDot {
+  width: var(--space-sm);
+  height: var(--space-sm);
+  border-radius: var(--radius-full);
+  background-color: var(--color-border-medium);
+  border: none;
+  cursor: pointer;
+  transform: scale(1);
+  transition: background-color var(--transition-fast), transform var(--transition-fast), opacity var(--transition-fast);
+}
+
+.indicatorDot:hover {
+  background-color: var(--color-text-secondary);
+  transform: scale(1.15);
+}
+
+.indicatorActive {
+  background-color: var(--color-brand-primary);
+  transform: scale(1.4);
+}
+
+@media (max-width: 640px) {
+  .carousel {
+    padding: 0 var(--space-md);
+  }
+
+  .navButton {
+    width: var(--space-xl);
+    height: var(--space-xl);
+    font-size: var(--font-size-xs);
+  }
+}
