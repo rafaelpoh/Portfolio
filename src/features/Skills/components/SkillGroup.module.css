@@ -57,6 +57,12 @@
   object-fit: contain;
 }
 
+/* Inverte ícones brancos (GitHub, Vercel) no tema claro para garantir visibilidade */
+:root[data-theme="Claro"] .skillIcon[src*="github"],
+:root[data-theme="Claro"] .skillIcon[src*="vercel"] {
+  filter: invert(1);
+}
+
 .fallbackIcon {
   font-size: 32px;
   color: var(--color-brand-primary);

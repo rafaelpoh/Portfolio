@@ -29,7 +29,7 @@ export const PROFILE_DATA: ProfileData = {
   paragraphs: [
     'Um Desenvolvedor Front-End que une o rigor da lógica estruturada à eficiência das interfaces modernas.',
     'Minha trajetória na tecnologia é marcada por uma base de engenharia profunda. Antes de focar na experiência do usuário, consolidei meu raciocínio lógico e a resolução de problemas complexos através de linguagens de baixo nível como C e C++. Essa bagagem me permite entender exatamente o que acontece por trás dos panos de uma aplicação, resultando em um código nativo (JavaScript, HTML5 e CSS3) muito mais sólido, semântico e performático.',
-    'Graduado em Análise e Desenvolvimento de Sistemas (ADS) e com histórico prático no Banco do Brasil manipulando bancos de dados relacionais (SQL) e relatórios, desenvolvi uma visão analítica sobre a organização e o fluxo de dados. Hoje, aplico essa disciplina na construção de layouts responsivos, modulares e pautados em Acessibilidade Web (WCAG), enquanto expando continuamente meus horizontes com o estudo e aprimoramento ativo no ecossistema React e TypeScript.',
+    'Graduado em Análise e Desenvolvimento de Sistemas (ADS) e com histórico prático no Banco do Brasil manipulando bancos de dados relacionais (SQL) e relatórios, desenvolvi uma visão analítica sobre a organização e o fluxo de dados. Hoje, aplico essa disciplina na construção de layouts responsivos, modulares e pautados em Acessibilidade Web (WCAG), dominando a arquitetura e o desenvolvimento de aplicações modernas com React e TypeScript.',
     'Além disso, sou um entusiasta de Inteligência Artificial, integrando ferramentas inteligentes para otimizar meu fluxo de desenvolvimento e elevar a precisão das minhas entregas. Sou movido por desafios arquiteturais e pela evolução técnica constante. Vamos construir algo incrível juntos?',
   ],
 };
@@ -111,6 +111,8 @@ export const COURSES_DATA: ReadonlyArray<Course> = [
 
 export const SKILLS_DATA: SkillsData = {
   programming: [
+    { id: 'prog-react', name: 'React', iconUrl: 'assets/icons/react.svg' },
+    { id: 'prog-ts', name: 'TypeScript', iconUrl: 'assets/icons/ts.svg' },
     { id: 'prog-html', name: 'HTML5', iconUrl: 'assets/icons/html.png' },
     { id: 'prog-css', name: 'CSS3', iconUrl: 'assets/icons/css.png' },
     { id: 'prog-js', name: 'JavaScript', iconUrl: 'assets/icons/js.png' },

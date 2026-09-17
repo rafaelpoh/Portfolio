@@ -34,6 +34,12 @@ h1, h2, h3, h4, h5, h6 {
   text-wrap: balance;
 }
 
+/* Adaptabilidade de ícones monocromáticos (GitHub / Vercel) no Tema Claro */
+:root[data-theme="Claro"] img[src*="github"],
+:root[data-theme="Claro"] img[src*="vercel"] {
+  filter: invert(1);
+}
+
 /* Foco Acessível (WCAG 2.1 AA) */
 :focus-visible {
   outline: 2px solid var(--color-brand-primary);
