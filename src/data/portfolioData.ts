@@ -168,10 +168,10 @@ export const PROJECTS_DATA: ReadonlyArray<Project> = [
     title: 'Agente Financeiro com IA',
     image: 'assets/img/agente-financeiro.WebP',
     description:
-      'Aplicação full-stack que consome a API do Google Gemini para gerenciar finanças pessoais via linguagem natural, automatizando o registro de despesas e gerando insights orçamentários dinâmicos com MongoDB e Node.js Serverless.',
+      'Controle financeiro inteligente que substitui formulários exaustivos por um agente conversacional integrado ao Google Gemini. O usuário registra gastos, ganhos e aportes via chat e acompanha métricas em tempo real em um dashboard limpo e responsivo. Desenvolvido com React 18 e TypeScript, adota gráficos em CSS3 nativo para máxima velocidade, validação Zero Trust com Zod, autenticação com Firebase Auth e banco de dados NoSQL no Cloud Firestore com rotas serverless na Vercel.',
     liveUrl: 'https://financas-three-chi.vercel.app',
     githubUrl: 'https://github.com/rafaelpoh/dio-lab-vibe-coding-app-financas',
-    tags: ['Google Gemini', 'Node.js', 'MongoDB', 'Serverless', 'AI Financial Insights'],
+    tags: ['React 18', 'TypeScript', 'Google Gemini', 'Firebase Auth', 'Firestore', 'Zod'],
   },
   {
     id: 'proj-sucoflesh',

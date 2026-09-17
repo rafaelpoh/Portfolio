@@ -14,6 +14,24 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   transition: background-color var(--transition-normal), color var(--transition-normal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Impeccable Craft Floor: Estilização da Seleção de Texto */
+::selection {
+  background-color: var(--color-brand-primary);
+  color: var(--color-brand-text);
+}
+
+/* Impeccable Craft Floor: Caret e Inserção de Texto */
+input, textarea {
+  caret-color: var(--color-brand-primary);
+}
+
+/* Impeccable Craft Floor: Balanço Tipográfico de Títulos */
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
 }
 
 /* Foco Acessível (WCAG 2.1 AA) */

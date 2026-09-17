@@ -1,4 +1,4 @@
-import { FC, memo } from 'react';
+import { FC, memo, useState } from 'react';
 import type { Project } from '../../../types/portfolio';
 import { Card } from '../../../components/Card/Card';
 import { Button } from '../../../components/Button/Button';
@@ -10,15 +10,24 @@ export interface ProjectCardProps {
 }
 
 export const ProjectCard: FC<ProjectCardProps> = memo(({ project }) => {
+  const [imgError, setImgError] = useState(false);
+
   return (
     <Card className={styles.card} interactive>
       <div className={styles.mediaContainer}>
-        <img
-          src={project.image}
-          alt={`Visualização do projeto ${project.title}`}
-          className={styles.image}
-          loading="lazy"
-        />
+        {!imgError ? (
+          <img
+            src={project.image}
+            alt={`Visualização do projeto ${project.title}`}
+            className={styles.image}
+            loading="lazy"
+            onError={() => setImgError(true)}
+          />
+        ) : (
+          <div className={styles.imageFallback}>
+            <i className="bi bi-code-slash" aria-hidden="true" />
+          </div>
+        )}
       </div>
 
       <div className={styles.content}>

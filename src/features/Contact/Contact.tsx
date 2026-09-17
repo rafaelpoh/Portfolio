@@ -1,4 +1,4 @@
-import { FC, memo, useState, useCallback } from 'react';
+import { FC, memo, useState, useCallback, useRef, useEffect } from 'react';
 import type { ProfileData } from '../../types/portfolio';
 import { Card } from '../../components/Card/Card';
 import { Button } from '../../components/Button/Button';
@@ -10,12 +10,22 @@ export interface ContactProps {
 
 export const Contact: FC<ContactProps> = memo(({ profile }) => {
   const [copiedEmail, setCopiedEmail] = useState<boolean>(false);
+  const timerRef = useRef<number | null>(null);
+
+  useEffect(() => {
+    return () => {
+      if (timerRef.current) {
+        window.clearTimeout(timerRef.current);
+      }
+    };
+  }, []);
 
   const handleCopyEmail = useCallback(async () => {
     try {
       await navigator.clipboard.writeText(profile.email);
       setCopiedEmail(true);
-      setTimeout(() => {
+      if (timerRef.current) window.clearTimeout(timerRef.current);
+      timerRef.current = window.setTimeout(() => {
         setCopiedEmail(false);
       }, 3000);
     } catch {
