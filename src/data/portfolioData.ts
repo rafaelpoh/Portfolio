@@ -45,6 +45,15 @@ export const COURSES_DATA: ReadonlyArray<Course> = [
     institution: 'Ensino Superior',
   },
   {
+    id: 'curso-santander-ai-react',
+    title: 'Bootcamp Santander 2026 - AI React Front-end',
+    image: './assets/certificados/Santander 2026 - AI React Front-end.png',
+    description:
+      'Formação prática em desenvolvimento front-end moderno combinando React 19, Vite e Inteligência Artificial. Foco na criação de interfaces responsivas, acessíveis e orientadas a UI/UX, utilizando componentes funcionais, hooks e sistemas de theming. No projeto de conclusão, integrei a API Gemini para processamento de IA generativa em tempo real, entregando uma aplicação completa de orientações financeiras personalizadas com arquitetura limpa e boas práticas de código.',
+    certificateUrl: './assets/pdfs/Santander 2026 - AI React Front-end.pdf',
+    institution: 'Santander / DIO',
+  },
+  {
     id: 'curso-caixa-ia',
     title: 'Bootcamp CAIXA - IA Generativa com Microsoft Copilot',
     image: './assets/certificados/caixa.WebP',
@@ -140,7 +149,7 @@ export const PROJECTS_DATA: ReadonlyArray<Project> = [
     title: 'Viajante - Roteirista de Viagens com IA',
     image: 'assets/img/Viajante.WebP',
     description:
-      'Planejador inteligente de itinerários que utiliza Google Gemini para gerar roteiros dinâmicos e personalizados. Consome APIs de clima (OpenWeatherMap) e dados geográficos (REST Countries). Autenticação e histórico persistido no Firebase com backend serverless na Vercel para proteção de chaves.',
+      'O Viajante é um planejador inteligente de viagens em React e TypeScript. Ele combina a IA do Google Gemini com dados reais de clima (OpenWeather) e moedas (REST Countries) para criar itinerários dia a dia detalhados com dicas de roupas e orçamento. Inclui mapas interativos com Leaflet para explorar atrações próximas, login seguro via Firebase Auth e histórico salvo no Firestore através de APIs serverless na Vercel validadas com Zod.',
     liveUrl: 'https://viajante-six.vercel.app',
     githubUrl: 'https://github.com/rafaelpoh/Viajante',
     tags: ['Google Gemini', 'Firebase Auth', 'Firestore', 'Vercel Serverless', 'REST APIs'],
@@ -190,7 +199,7 @@ export const PROJECTS_DATA: ReadonlyArray<Project> = [
     title: 'Receitas da Vó',
     image: 'assets/img/receitasdavo.WebP',
     description:
-      'Livro de receitas digital minimalista com estética editorial magazine. Integração com Google Gemini Serverless para estruturar receitas a partir de qualquer link externo, além de compressão nativa de imagens no cliente via Canvas antes da sincronização no Firestore.',
+      'O Receitas da Vó é um livro de receitas digital minimalista com estética editorial ("modo revista"), sem anúncios e focado na praticidade na cozinha. Oferece checklist interativo, importação inteligente via IA (Gemini) a partir de links ou textos, compressão de fotos no navegador via Canvas e persistência no Cloud Firestore, além de páginas dinâmicas para compartilhamento. Foi desenvolvido com JavaScript Vanilla puro e funções serverless na Vercel.',
     liveUrl: 'https://receitasdavo-one.vercel.app',
     githubUrl: 'https://github.com/rafaelpoh/Receitasdavo',
     tags: ['Google Gemini', 'HTML5 Canvas', 'Cloud Firestore', 'Serverless Vercel'],
