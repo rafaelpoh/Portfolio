@@ -152,7 +152,7 @@ export const PROJECTS_DATA: ReadonlyArray<Project> = [
       'O Viajante é um planejador inteligente de viagens em React e TypeScript. Ele combina a IA do Google Gemini com dados reais de clima (OpenWeather) e moedas (REST Countries) para criar itinerários dia a dia detalhados com dicas de roupas e orçamento. Inclui mapas interativos com Leaflet para explorar atrações próximas, login seguro via Firebase Auth e histórico salvo no Firestore através de APIs serverless na Vercel validadas com Zod.',
     liveUrl: 'https://viajante-six.vercel.app',
     githubUrl: 'https://github.com/rafaelpoh/Viajante',
-    tags: ['Google Gemini', 'Firebase Auth', 'Firestore', 'Vercel Serverless', 'REST APIs'],
+    tags: ['React 18', 'TypeScript', 'Google Gemini', 'Leaflet', 'Firebase Auth', 'Zod'],
   },
   {
     id: 'proj-gymtracker',
@@ -199,10 +199,10 @@ export const PROJECTS_DATA: ReadonlyArray<Project> = [
     title: 'Receitas da Vó',
     image: 'assets/img/receitasdavo.WebP',
     description:
-      'O Receitas da Vó é um livro de receitas digital minimalista com estética editorial ("modo revista"), sem anúncios e focado na praticidade na cozinha. Oferece checklist interativo, importação inteligente via IA (Gemini) a partir de links ou textos, compressão de fotos no navegador via Canvas e persistência no Cloud Firestore, além de páginas dinâmicas para compartilhamento. Foi desenvolvido com JavaScript Vanilla puro e funções serverless na Vercel.',
+      'O Receitas da Vó é um livro de receitas digital minimalista com estética editorial ("modo revista"), sem anúncios e focado na praticidade na cozinha. Desenvolvido com React 18 e TypeScript, oferece checklist interativo, importação inteligente via IA (Google Gemini) a partir de links ou textos, compressão de fotos no cliente via Canvas, validação Zero Trust com Zod, autenticação com Firebase Auth e banco de dados Cloud Firestore com rotas serverless na Vercel.',
     liveUrl: 'https://receitasdavo-one.vercel.app',
     githubUrl: 'https://github.com/rafaelpoh/Receitasdavo',
-    tags: ['Google Gemini', 'HTML5 Canvas', 'Cloud Firestore', 'Serverless Vercel'],
+    tags: ['React 18', 'TypeScript', 'Google Gemini', 'Firebase Auth', 'Cloud Firestore', 'Zod'],
   },
   {
     id: 'proj-co2calculadora',
