@@ -199,7 +199,7 @@ export const PROJECTS_DATA: ReadonlyArray<Project> = [
     title: 'Receitas da Vó',
     image: 'assets/img/receitasdavo.WebP',
     description:
-      'O Receitas da Vó é um livro de receitas digital minimalista com estética editorial ("modo revista"), sem anúncios e focado na praticidade na cozinha. Desenvolvido com React 18 e TypeScript, oferece checklist interativo, importação inteligente via IA (Google Gemini) a partir de links ou textos, compressão de fotos no cliente via Canvas, validação Zero Trust com Zod, autenticação com Firebase Auth e banco de dados Cloud Firestore com rotas serverless na Vercel.',
+      'Receitas da Vó é um livro de receitas digital minimalista com estética editorial "modo revista", livre de anúncios e distrações. Desenvolvido em React, TypeScript e Vite, o app traz importação inteligente de receitas via IA (Google Gemini), checklists interativos para uso prático na cozinha, compressão local de fotos via Canvas e sincronização em nuvem com Firebase. O resgate dos cadernos de família com o frescor da web moderna.',
     liveUrl: 'https://receitasdavo-one.vercel.app',
     githubUrl: 'https://github.com/rafaelpoh/Receitasdavo',
     tags: ['React 18', 'TypeScript', 'Google Gemini', 'Firebase Auth', 'Cloud Firestore', 'Zod'],
