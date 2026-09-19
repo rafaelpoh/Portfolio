@@ -155,6 +155,26 @@ export const PROJECTS_DATA: ReadonlyArray<Project> = [
     tags: ['React 18', 'TypeScript', 'Google Gemini', 'Leaflet', 'Firebase Auth', 'Zod'],
   },
   {
+    id: 'proj-agente-financeiro',
+    title: 'Agente Financeiro com IA',
+    image: 'assets/img/agente-financeiro.WebP',
+    description:
+      'Controle financeiro inteligente que substitui formulários exaustivos por um agente conversacional integrado ao Google Gemini. O usuário registra gastos, ganhos e aportes via chat e acompanha métricas em tempo real em um dashboard limpo e responsivo. Desenvolvido com React 18 e TypeScript, adota gráficos em CSS3 nativo para máxima velocidade, validação Zero Trust com Zod, autenticação com Firebase Auth e banco de dados NoSQL no Cloud Firestore com rotas serverless na Vercel.',
+    liveUrl: 'https://financas-three-chi.vercel.app',
+    githubUrl: 'https://github.com/rafaelpoh/dio-lab-vibe-coding-app-financas',
+    tags: ['React 18', 'TypeScript', 'Google Gemini', 'Firebase Auth', 'Firestore', 'Zod'],
+  },
+  {
+    id: 'proj-receitasdavo',
+    title: 'Receitas da Vó',
+    image: 'assets/img/receitasdavo.WebP',
+    description:
+      'Receitas da Vó é um livro de receitas digital minimalista com estética editorial "modo revista", livre de anúncios e distrações. Desenvolvido em React, TypeScript e Vite, o app traz importação inteligente de receitas via IA (Google Gemini), checklists interativos para uso prático na cozinha, compressão local de fotos via Canvas e sincronização em nuvem com Firebase. O resgate dos cadernos de família com o frescor da web moderna.',
+    liveUrl: 'https://receitasdavo-one.vercel.app',
+    githubUrl: 'https://github.com/rafaelpoh/Receitasdavo',
+    tags: ['React 18', 'TypeScript', 'Google Gemini', 'Firebase Auth', 'Cloud Firestore', 'Zod'],
+  },
+  {
     id: 'proj-gymtracker',
     title: 'GymTracker',
     image: 'assets/img/GymTracker.WebP',
@@ -175,16 +195,6 @@ export const PROJECTS_DATA: ReadonlyArray<Project> = [
     tags: ['SPA', 'Persistent Player', 'Event Delegation', 'Performance'],
   },
   {
-    id: 'proj-agente-financeiro',
-    title: 'Agente Financeiro com IA',
-    image: 'assets/img/agente-financeiro.WebP',
-    description:
-      'Controle financeiro inteligente que substitui formulários exaustivos por um agente conversacional integrado ao Google Gemini. O usuário registra gastos, ganhos e aportes via chat e acompanha métricas em tempo real em um dashboard limpo e responsivo. Desenvolvido com React 18 e TypeScript, adota gráficos em CSS3 nativo para máxima velocidade, validação Zero Trust com Zod, autenticação com Firebase Auth e banco de dados NoSQL no Cloud Firestore com rotas serverless na Vercel.',
-    liveUrl: 'https://financas-three-chi.vercel.app',
-    githubUrl: 'https://github.com/rafaelpoh/dio-lab-vibe-coding-app-financas',
-    tags: ['React 18', 'TypeScript', 'Google Gemini', 'Firebase Auth', 'Firestore', 'Zod'],
-  },
-  {
     id: 'proj-sucoflesh',
     title: 'Sucoflesh — Landing Page',
     image: 'assets/img/sucoflesh.WebP',
@@ -193,16 +203,6 @@ export const PROJECTS_DATA: ReadonlyArray<Project> = [
     liveUrl: 'https://rafaelpoh.github.io/Sucoflesh/',
     githubUrl: 'https://github.com/rafaelpoh/Sucoflesh',
     tags: ['Mobile First', 'Scroll Animations', 'WCAG A11y', 'Performance'],
-  },
-  {
-    id: 'proj-receitasdavo',
-    title: 'Receitas da Vó',
-    image: 'assets/img/receitasdavo.WebP',
-    description:
-      'Receitas da Vó é um livro de receitas digital minimalista com estética editorial "modo revista", livre de anúncios e distrações. Desenvolvido em React, TypeScript e Vite, o app traz importação inteligente de receitas via IA (Google Gemini), checklists interativos para uso prático na cozinha, compressão local de fotos via Canvas e sincronização em nuvem com Firebase. O resgate dos cadernos de família com o frescor da web moderna.',
-    liveUrl: 'https://receitasdavo-one.vercel.app',
-    githubUrl: 'https://github.com/rafaelpoh/Receitasdavo',
-    tags: ['React 18', 'TypeScript', 'Google Gemini', 'Firebase Auth', 'Cloud Firestore', 'Zod'],
   },
   {
     id: 'proj-co2calculadora',
@@ -273,26 +273,6 @@ export const PROJECTS_DATA: ReadonlyArray<Project> = [
     liveUrl: 'https://rafaelpoh.github.io/mega-sorte',
     githubUrl: 'https://github.com/rafaelpoh/mega-sorte',
     tags: ['Probability Math', 'State Logic', 'Algorithms'],
-  },
-  {
-    id: 'proj-churrascometro',
-    title: 'Churrascômetro',
-    image: 'assets/img/churras.WebP',
-    description:
-      'Calculadora de planejamento de suprimentos baseada em perfis de consumo e tempo de evento, gerando relatórios de insumos com lógica de cálculo paramétrico dinâmico.',
-    liveUrl: 'https://rafaelpoh.github.io/Churrascometro/',
-    githubUrl: 'https://github.com/rafaelpoh/Churrascometro',
-    tags: ['Parametric Logic', 'Dynamic Forms', 'UX Utility'],
-  },
-  {
-    id: 'proj-jogo-velha',
-    title: 'Jogo da Velha',
-    image: 'assets/img/jogo-da-veia.WebP',
-    description:
-      'Implementação com lógica matricial bidimensional, detecção instantânea de vitórias/empates e interface com responsividade tátil completa.',
-    liveUrl: 'https://rafaelpoh.github.io/jogo-da-veia/',
-    githubUrl: 'https://github.com/rafaelpoh/jogo-da-veia',
-    tags: ['Matrix Logic', 'Game State', 'Touch Support'],
   },
 ];
 
