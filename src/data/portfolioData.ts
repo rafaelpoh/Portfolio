@@ -251,7 +251,6 @@ export const PROJECTS_DATA: ReadonlyArray<Project> = [
     description:
       'Landing page institucional para empresa do setor de serviços, desenvolvida com forte foco em SEO, arquitetura limpa e alta taxa de conversão para solicitação de orçamentos.',
     liveUrl: 'https://jperroni.com.br',
-    githubUrl: 'https://github.com/rafaelpoh/Jperroni',
     tags: ['Institutional', 'SEO', 'Performance'],
   },
   {

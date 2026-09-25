@@ -63,7 +63,7 @@ export interface Project {
   readonly image: string;
   readonly description: string;
   readonly liveUrl: string;
-  readonly githubUrl: string;
+  readonly githubUrl?: string;
   readonly tags?: ReadonlyArray<string>;
 }
 
@@ -82,6 +82,6 @@ export interface OtherProject {
   readonly image: string;
   readonly description: string;
   readonly liveUrl: string;
-  readonly githubUrl: string;
+  readonly githubUrl?: string;
   readonly tags?: ReadonlyArray<string>;
 }

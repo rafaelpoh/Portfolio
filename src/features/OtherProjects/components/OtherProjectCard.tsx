@@ -48,16 +48,18 @@ export const OtherProjectCard: FC<OtherProjectCardProps> = memo(({ item }) => {
             Ver Demonstração
           </Button>
 
-          <Button
-            variant="secondary"
-            size="sm"
-            href={item.githubUrl}
-            target="_blank"
-            icon={<i className="bi bi-github" aria-hidden="true" />}
-            ariaLabel={`Ver repositório no GitHub de ${item.title}`}
-          >
-            Repositório
-          </Button>
+          {item.githubUrl && (
+            <Button
+              variant="secondary"
+              size="sm"
+              href={item.githubUrl}
+              target="_blank"
+              icon={<i className="bi bi-github" aria-hidden="true" />}
+              ariaLabel={`Ver repositório no GitHub de ${item.title}`}
+            >
+              Repositório
+            </Button>
+          )}
         </div>
       </div>
     </Card>

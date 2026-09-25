@@ -57,16 +57,18 @@ export const ProjectCard: FC<ProjectCardProps> = memo(({ project }) => {
             Acessar Aplicação
           </Button>
 
-          <Button
-            variant="secondary"
-            size="sm"
-            href={project.githubUrl}
-            target="_blank"
-            icon={<i className="bi bi-github" aria-hidden="true" />}
-            ariaLabel={`Ver repositório no GitHub do projeto ${project.title}`}
-          >
-            Repositório
-          </Button>
+          {project.githubUrl && (
+            <Button
+              variant="secondary"
+              size="sm"
+              href={project.githubUrl}
+              target="_blank"
+              icon={<i className="bi bi-github" aria-hidden="true" />}
+              ariaLabel={`Ver repositório no GitHub do projeto ${project.title}`}
+            >
+              Repositório
+            </Button>
+          )}
         </div>
       </div>
     </Card>
