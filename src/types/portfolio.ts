@@ -28,6 +28,7 @@ export interface ProfileData {
   readonly githubUrl: string;
   readonly linkedinUrl: string;
   readonly email: string;
+  readonly resumeUrl: string;
 }
 
 export interface Course {

@@ -84,7 +84,7 @@ Design System construído para o portfólio de **Rafael Perroni**, refletindo a 
   - Badges e indicadores: `9999px` (`--radius-full`).
 
 ## Components
-- **Button:** Polimórfico (`button` ou `a`), com variantes `primary`, `secondary`, `outline` e `ghost`. Validação estrita de URLs seguras contra XSS.
+- **Button:** Polimórfico (`button` ou `a`), com variantes `primary`, `secondary`, `outline` e `ghost`. Validação estrita de URLs seguras contra XSS e suporte seguro ao atributo `download`.
 - **Card:** Contêiner modular com suporte a variante interativa (elevação via hardware transform `translateY(-4px)`).
 - **Carousel:** Carrossel acessível com touch swipe nativo, controles por teclado (`ArrowLeft` / `ArrowRight`) e indicadores táteis.
 - **ProfileCanvas:** Avatar interativo com renderização em HTML5 Canvas, ResizeObserver e suporte completo a mouse hover e toque móvel sem memory leaks.

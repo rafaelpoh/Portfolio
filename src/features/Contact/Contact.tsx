@@ -109,6 +109,41 @@ export const Contact: FC<ContactProps> = memo(({ profile }) => {
           </div>
         </Card>
 
+        {/* Card Currículo */}
+        <Card className={styles.contactCard} elevated>
+          <div className={styles.cardHeader}>
+            <div className={styles.iconCircle}>
+              <i className="bi bi-file-earmark-person-fill" aria-hidden="true" />
+            </div>
+            <div>
+              <h3 className={styles.channelTitle}>Currículo Profissional</h3>
+              <p className={styles.channelValue}>Rafael_Perroni.pdf</p>
+            </div>
+          </div>
+          <div className={styles.buttonGroup}>
+            <Button
+              variant="primary"
+              size="md"
+              href={profile.resumeUrl}
+              target="_blank"
+              icon={<i className="bi bi-eye-fill" aria-hidden="true" />}
+              ariaLabel="Visualizar currículo de Rafael Perroni em formato PDF em nova aba"
+            >
+              Visualizar CV
+            </Button>
+            <Button
+              variant="secondary"
+              size="md"
+              href={profile.resumeUrl}
+              download="Rafael_Perroni_Curriculo.pdf"
+              icon={<i className="bi bi-download" aria-hidden="true" />}
+              ariaLabel="Baixar currículo de Rafael Perroni em formato PDF"
+            >
+              Baixar CV
+            </Button>
+          </div>
+        </Card>
+
         {/* Card GitHub */}
         <Card className={styles.contactCard} elevated>
           <div className={styles.cardHeader}>

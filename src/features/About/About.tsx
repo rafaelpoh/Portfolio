@@ -21,27 +21,58 @@ export const About: FC<AboutProps> = memo(({ profile, onNavigate }) => {
             alternativeSrc={profile.photo}
             alt={`Foto de perfil de ${profile.name}`}
           />
-          <div className={styles.socialQuickLinks}>
-            <Button
-              variant="secondary"
-              size="sm"
-              href={profile.githubUrl}
-              target="_blank"
-              icon={<i className="bi bi-github" aria-hidden="true" />}
-              ariaLabel="Acessar GitHub de Rafael Perroni"
-            >
-              GitHub
-            </Button>
-            <Button
-              variant="secondary"
-              size="sm"
-              href={profile.linkedinUrl}
-              target="_blank"
-              icon={<i className="bi bi-linkedin" aria-hidden="true" />}
-              ariaLabel="Acessar LinkedIn de Rafael Perroni"
-            >
-              LinkedIn
-            </Button>
+          <div className={styles.profileActions}>
+            {/* Ações Rápidas do Currículo */}
+            <div className={styles.cvActionsGroup}>
+              <Button
+                variant="primary"
+                size="sm"
+                href={profile.resumeUrl}
+                target="_blank"
+                icon={<i className="bi bi-file-earmark-person-fill" aria-hidden="true" />}
+                ariaLabel="Visualizar currículo de Rafael Perroni em formato PDF em nova aba"
+                className={styles.actionBtn}
+              >
+                Visualizar CV
+              </Button>
+              <Button
+                variant="outline"
+                size="sm"
+                href={profile.resumeUrl}
+                download="Rafael_Perroni_Curriculo.pdf"
+                icon={<i className="bi bi-download" aria-hidden="true" />}
+                ariaLabel="Baixar currículo de Rafael Perroni em formato PDF"
+                className={styles.actionBtn}
+              >
+                Baixar CV
+              </Button>
+            </div>
+
+            {/* Redes Profissionais */}
+            <div className={styles.socialQuickLinks}>
+              <Button
+                variant="secondary"
+                size="sm"
+                href={profile.githubUrl}
+                target="_blank"
+                icon={<i className="bi bi-github" aria-hidden="true" />}
+                ariaLabel="Acessar perfil de Rafael Perroni no GitHub"
+                className={styles.actionBtn}
+              >
+                GitHub
+              </Button>
+              <Button
+                variant="secondary"
+                size="sm"
+                href={profile.linkedinUrl}
+                target="_blank"
+                icon={<i className="bi bi-linkedin" aria-hidden="true" />}
+                ariaLabel="Acessar perfil de Rafael Perroni no LinkedIn"
+                className={styles.actionBtn}
+              >
+                LinkedIn
+              </Button>
+            </div>
           </div>
         </div>
 

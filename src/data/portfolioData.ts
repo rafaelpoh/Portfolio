@@ -26,6 +26,7 @@ export const PROFILE_DATA: ProfileData = {
   githubUrl: 'https://github.com/rafaelpoh',
   linkedinUrl: 'https://www.linkedin.com/in/rafaelperroni',
   email: 'rafaelperroni@hotmail.com',
+  resumeUrl: './assets/pdfs/Rafael_Perroni.pdf',
   paragraphs: [
     'Um Desenvolvedor Front-End que une o rigor da lógica estruturada à eficiência das interfaces modernas.',
     'Minha trajetória na tecnologia é marcada por uma base de engenharia profunda. Antes de focar na experiência do usuário, consolidei meu raciocínio lógico e a resolução de problemas complexos através de linguagens de baixo nível como C e C++. Essa bagagem me permite entender exatamente o que acontece por trás dos panos de uma aplicação, resultando em um código nativo (JavaScript, HTML5 e CSS3) muito mais sólido, semântico e performático.',

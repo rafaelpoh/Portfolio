@@ -29,6 +29,7 @@ Avaliadores navegam pelo portfólio em telas desktop e mobile, inspecionando có
 - Carrosséis/Grids táteis e acessíveis com controle por teclado, toque e botões com IDs persistentes.
 - Zero bibliotecas de UI inchadas: CSS Modules nativo, tipagem estrita no TypeScript, bundle ultraleve.
 - Prevenção total contra XSS (Zero Trust, JSX nativo, validação de URLs seguras e `rel="noopener noreferrer"`).
+- Acesso rápido e direto ao currículo profissional (visualização em nova aba e download em PDF) nas seções Sobre e Contato.
 
 ## Brand Commitments
 - Nome: Rafael Perroni (@rafaelpoh).

@@ -22,11 +22,23 @@
   max-width: 380px;
 }
 
-.socialQuickLinks {
+.profileActions {
   display: flex;
-  gap: var(--space-sm);
+  flex-direction: column;
+  gap: var(--space-xs);
   width: 100%;
-  justify-content: center;
+}
+
+.cvActionsGroup,
+.socialQuickLinks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-xs);
+  width: 100%;
+}
+
+.actionBtn {
+  width: 100%;
 }
 
 /* Coluna de Texto */

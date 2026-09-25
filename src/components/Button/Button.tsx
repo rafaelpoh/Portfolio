@@ -18,6 +18,7 @@ export interface ButtonProps {
   readonly disabled?: boolean;
   readonly className?: string;
   readonly icon?: ReactNode;
+  readonly download?: boolean | string;
 }
 
 export const Button: FC<ButtonProps> = memo(
@@ -34,6 +35,7 @@ export const Button: FC<ButtonProps> = memo(
     disabled = false,
     className = '',
     icon,
+    download,
   }) => {
     const combinedClassName = `${styles.button} ${styles[variant]} ${styles[size]} ${className}`.trim();
 
@@ -48,6 +50,7 @@ export const Button: FC<ButtonProps> = memo(
           className={combinedClassName}
           target={target}
           rel={safeRel}
+          download={download}
           aria-label={ariaLabel}
           onClick={disabled ? (e) => e.preventDefault() : onClick}
           aria-disabled={disabled}
