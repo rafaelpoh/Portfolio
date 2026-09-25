@@ -175,6 +175,16 @@ export const PROJECTS_DATA: ReadonlyArray<Project> = [
     tags: ['React 18', 'TypeScript', 'Google Gemini', 'Firebase Auth', 'Cloud Firestore', 'Zod'],
   },
   {
+    id: 'proj-playlist',
+    title: 'PlayList',
+    image: 'assets/img/playlist.WebP',
+    description:
+      'O Playlist é uma aplicação web de entretenimento para explorar filmes, séries e animes. Integra as APIs TMDb e Jikan com player de trailers e sincronização de favoritos (Watchlist) em tempo real via Cloud Firestore. É desenvolvido com React 18, TypeScript estrito, Vite, CSS Modules, Zod e Firebase Auth, com foco em tipagem segura, performance e design cinematográfico.',
+    liveUrl: 'https://playlist-psi-three.vercel.app',
+    githubUrl: 'https://github.com/rafaelpoh/playlist',
+    tags: ['React 18', 'TypeScript', 'Cloud Firestore', 'Firebase Auth', 'TMDb API', 'Zod'],
+  },
+  {
     id: 'proj-gymtracker',
     title: 'GymTracker',
     image: 'assets/img/GymTracker.WebP',
@@ -215,16 +225,6 @@ export const PROJECTS_DATA: ReadonlyArray<Project> = [
     tags: ['Geocoding API', 'Math Logic', 'Data Visualization'],
   },
   {
-    id: 'proj-serielist',
-    title: 'SerieList',
-    image: 'assets/img/serielist.WebP',
-    description:
-      'Plataforma de exploração de catálogo audiovisual consumindo a API TMDb. Implementação de busca instantânea reativa, filtros por gênero e visualização interativa de trailers oficiais via modais acessíveis.',
-    liveUrl: 'https://rafaelpoh.github.io/serielist/',
-    githubUrl: 'https://github.com/rafaelpoh/serielist',
-    tags: ['TMDb API', 'Async Fetch', 'Dynamic Modals', 'Responsive Grid'],
-  },
-  {
     id: 'proj-criptohunter',
     title: 'CriptoHunter',
     image: 'assets/img/criptohunter.WebP',
@@ -233,16 +233,6 @@ export const PROJECTS_DATA: ReadonlyArray<Project> = [
     liveUrl: 'https://rafaelpoh.github.io/CriptoHunter',
     githubUrl: 'https://github.com/rafaelpoh/CriptoHunter',
     tags: ['CoinGecko API', 'Realtime Financial Data', 'Array Optimization'],
-  },
-  {
-    id: 'proj-movielist',
-    title: 'MovieList',
-    image: 'assets/img/movielist.WebP',
-    description:
-      'Aplicação cinematográfica com foco em integridade e verificação de dados de trailers oficiais, priorizando confiabilidade de conteúdo, baixo consumo de dados e navegação fluida.',
-    liveUrl: 'https://rafaelpoh.github.io/movielist',
-    githubUrl: 'https://github.com/rafaelpoh/movielist',
-    tags: ['REST API', 'Cinema DB', 'Responsive Design'],
   },
   {
     id: 'proj-quadro-ideias',
